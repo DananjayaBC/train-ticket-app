@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427044396791",
+    "project_id": "onlinetrainticket-17091",
+    "storage_bucket": "onlinetrainticket-17091.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427044396791:android:7359cde58181dc79407df2",
+        "android_client_info": {
+          "package_name": "com.dananjaya.train_ticket_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427044396791-f877tn6p6ol5d6dvtoomm1pqqt5r7htv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPKAzTfVozGnMhPdA0STJH8STyizBZc2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427044396791-f877tn6p6ol5d6dvtoomm1pqqt5r7htv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
