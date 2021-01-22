@@ -1,20 +1,47 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:train_ticket_app/pages/home.dart';
-import 'package:train_ticket_app/pages/loading.dart';
-import 'package:train_ticket_app/pages/logIn.dart';
-import 'package:train_ticket_app/pages/registration.dart';
+import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:train_ticket_app/login/logIn.dart';
+import 'package:train_ticket_app/home/home.dart';
+import 'package:train_ticket_app/splashScreen.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
-void main() {
   runApp(MaterialApp(
-          initialRoute: '/',
+    debugShowCheckedModeBanner: false,
+    initialRoute: '/',
     routes: {
-        '/': (context) =>Loading(),
+      '/': (context) => SplashScreen(),
       '/login': (context) => Login(),
-      '/register': (context) => Registration(),
       '/home': (context) => Home(),
     },
-    debugShowCheckedModeBanner: false,
+    title: 'Train app',
+    theme: ThemeData(
+      primaryColor: Colors.white,
+      primarySwatch: Colors.blue,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    ),
   ));
 }
 
+
+// Future<void> main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
+//   WidgetsFlutterBinding.ensureInitialized();
+//   SharedPreferences prefs = await SharedPreferences.getInstance();
+//   String email = prefs.getString("email");
+//   runApp(MaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     home: email == null ? Login() : Home(),
+//     title: 'Train app',
+//     theme: ThemeData(
+//       primaryColor: Colors.white,
+//       primarySwatch: Colors.blue,
+//       visualDensity: VisualDensity.adaptivePlatformDensity,
+//     ),
+//   ));
+// }
