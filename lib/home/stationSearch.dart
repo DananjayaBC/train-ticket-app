@@ -1,6 +1,9 @@
+import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
-import 'package:dropdownfield/dropdownfield.dart';
+import 'package:http/http.dart' as http;
+import 'package:train_ticket_app/models/stations.dart';
+import 'package:train_ticket_app/models/stations2.dart';
+import 'dart:convert';
 
 class StationSearch extends StatefulWidget {
   @override
@@ -8,22 +11,97 @@ class StationSearch extends StatefulWidget {
 }
 
 class _StationSearchState extends State<StationSearch> {
+  AutoCompleteTextField searchTextField;
+  AutoCompleteTextField searchTextField1;
+  GlobalKey<AutoCompleteTextFieldState<Stations>> key = new GlobalKey();
+  GlobalKey<AutoCompleteTextFieldState<Stations1>> key1 = new GlobalKey();
+
+  static List<Stations> stations = new List<Stations>();
+  static List<Stations1> stations1 = new List<Stations1>();
+  bool loading = true;
+
+  void getStations() async {
+    try {
+      final response = await http.get(
+          "https://onlinetrainticket-17091-default-rtdb.firebaseio.com/station.json");
+      if (response.statusCode == 200) {
+        stations = loadStations(response.body);
+        print('Stations: ${stations.length}');
+        setState(() {
+          loading = false;
+        });
+      } else {
+        print("Error getting stations.");
+      }
+    } catch (e) {}
+  }
+
+  void getStations1() async {
+    try {
+      final response = await http.get(
+          "https://onlinetrainticket-17091-default-rtdb.firebaseio.com/station.json");
+      if (response.statusCode == 200) {
+        stations1 = loadStations1(response.body);
+        print('Stations: ${stations1.length}');
+        setState(() {
+          loading = false;
+        });
+      } else {
+        print("Error getting stations.");
+      }
+    } catch (e) {}
+  }
+
+  static List<Stations> loadStations(String jsonString) {
+    final parsed = json.decode(jsonString).cast<Map<String, dynamic>>();
+    return parsed.map<Stations>((json) => Stations.fromJson(json)).toList();
+  }
+
+  static List<Stations1> loadStations1(String jsonString) {
+    final parsed = json.decode(jsonString).cast<Map<String, dynamic>>();
+    return parsed.map<Stations1>((json) => Stations1.fromJson(json)).toList();
+  }
+
   @override
   void initState() {
+    getStations();
+    getStations1();
     super.initState();
   }
 
-  String station_id;
-  List<String> station = [
-    "Mirigama",
-    "Rajadahana",
-    "Ganegoda",
-    "Pallewela",
-    "Kenawala",
-    "Wadurawa",
-    "Veyandoda",
-    "Gampaha",
-  ];
+  Widget row(Stations stations) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          stations.name,
+          style: TextStyle(
+            fontSize: 20.0,
+            color: Colors.black,
+            fontWeight: FontWeight.w400,
+            fontStyle: FontStyle.normal,
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget row1(Stations1 stations1) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          stations1.name1,
+          style: TextStyle(
+            fontSize: 20.0,
+            color: Colors.black,
+            fontWeight: FontWeight.w400,
+            fontStyle: FontStyle.normal,
+          ),
+        )
+      ],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,34 +113,140 @@ class _StationSearchState extends State<StationSearch> {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(15.0),
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              DropDownField(
-                onValueChanged: (dynamic value) {
-                  station_id = value;
-                },
-                value: station_id,
-                required: false,
-                hintText: 'I\'m at',
-                labelText: 'Station Name',
-                items: station,
-                strict: true,
-              ),
-              Divider(height: 10.0, color: Theme.of(context).primaryColor),
-              DropDownField(
-                onValueChanged: (dynamic value) {
-                  station_id = value;
-                },
-                value: station_id,
-                required: false,
-                hintText: 'I want to go to',
-                labelText: 'Station Name',
-                items: station,
-                strict: false,
-              ),
-            ]),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(10.0, 30.0, 10.0, 20.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                loading
+                    ? CircularProgressIndicator()
+                    : searchTextField = AutoCompleteTextField<Stations>(
+                        key: key,
+                        clearOnSubmit: false,
+                        suggestions: stations,
+                        style: TextStyle(color: Colors.black, fontSize: 20.0),
+                        decoration: InputDecoration(
+                          contentPadding:
+                              EdgeInsets.fromLTRB(10.0, 30.0, 10.0, 20.0),
+                          enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: Colors.black)),
+                          hintText: 'I am At',
+                          hintStyle:
+                              TextStyle(color: Colors.grey.withOpacity(1.0)),
+                          focusColor: Colors.red,
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: Colors.red[600]),
+                          ),
+                        ),
+                        itemFilter: (item, query) {
+                          return item.name
+                              .toLowerCase()
+                              .startsWith(query.toLowerCase());
+                        },
+                        itemSorter: (a, b) {
+                          return a.name.compareTo(b.name);
+                        },
+                        itemSubmitted: (item) {
+                          setState(() {
+                            searchTextField.textField.controller.text =
+                                item.name;
+                          });
+                        },
+                        itemBuilder: (context, item) {
+                          return row(item);
+                        },
+                      ),
+                SizedBox(
+                  height: 30.0,
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    loading
+                        ? CircularProgressIndicator()
+                        : searchTextField1 = AutoCompleteTextField<Stations1>(
+                            key: key1,
+                            clearOnSubmit: false,
+                            suggestions: stations1,
+                            style:
+                                TextStyle(color: Colors.black, fontSize: 20.0),
+                            decoration: InputDecoration(
+                              contentPadding:
+                                  EdgeInsets.fromLTRB(10.0, 30.0, 10.0, 20.0),
+                              enabledBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.black)),
+                              hintText: 'I Want to Go',
+                              hintStyle: TextStyle(
+                                  color: Colors.grey.withOpacity(1.0)),
+                              focusColor: Colors.red,
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.red[600]),
+                              ),
+                            ),
+                            itemFilter: (item1, query1) {
+                              return item1.name1
+                                  .toLowerCase()
+                                  .startsWith(query1.toLowerCase());
+                            },
+                            itemSorter: (c, d) {
+                              return c.name1.compareTo(d.name1);
+                            },
+                            itemSubmitted: (item1) {
+                              setState(() {
+                                searchTextField1.textField.controller.text =
+                                    item1.name1;
+                              });
+                            },
+                            itemBuilder: (context1, item1) {
+                              return row1(item1);
+                            },
+                          ),
+                  ],
+                ),
+                SizedBox(
+                  height: 30.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // InkWell(
+                    //   onTap: () {},
+                    //   child: Text(
+                    //     'SEARCH',
+                    //     style: TextStyle(
+                    //         color: Colors.red,
+                    //         fontSize: 20.0,
+                    //         fontWeight: FontWeight.bold),
+                    //   ),
+                    // ),
+                    // SizedBox(
+                    //   width: 38.0,
+                    // ),
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 16.0, horizontal: 34.0),
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(245, 50, 111, 1.0),
+                            borderRadius: BorderRadius.circular(30.0)),
+                        child: Text(
+                          'SEARCH',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

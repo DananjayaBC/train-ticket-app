@@ -1,12 +1,12 @@
-class Stations2 {
-  int id;
+class Stations1 {
+  int id1;
   String name1;
 
-  Stations2({this.id, this.name1});
+  Stations1({this.id1, this.name1});
 
-  factory Stations2.fromJson(Map<String, dynamic> parsedJson) {
-    return Stations2(
-      id: parsedJson["id"],
+  factory Stations1.fromJson(Map<String, dynamic> parsedJson) {
+    return Stations1(
+      id1: parsedJson["id"],
       name1: parsedJson["name"] as String,
     );
   }

@@ -137,24 +137,24 @@
 //               SizedBox(
 //                     height: 05.0,
 //                   ),
-//               Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                  InkWell(
-//                   onTap: () {
-//                      widget.aBackToHome();
-//                   },
-//                   child: Text(
-//                     'CANCEL',
-//                     style: TextStyle(
-//                         color: Colors.white,
-//                         fontSize: 20.0,
-//                         fontWeight: FontWeight.bold),
-//                   ),
-//                 ),
-//                   SizedBox(
-//                   width: 38.0,
-//                 ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: [
+              //    InkWell(
+              //     onTap: () {
+              //        widget.aBackToHome();
+              //     },
+              //     child: Text(
+              //       'CANCEL',
+              //       style: TextStyle(
+              //           color: Colors.white,
+              //           fontSize: 20.0,
+              //           fontWeight: FontWeight.bold),
+              //     ),
+              //   ),
+              //     SizedBox(
+              //     width: 38.0,
+              //   ),
               //     InkWell(
               //     onTap: () {
               //       if (_formKey.currentState.validate()) {
