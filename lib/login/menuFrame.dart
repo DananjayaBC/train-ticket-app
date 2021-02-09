@@ -69,17 +69,17 @@ class MenuFrame extends StatelessWidget {
                           _changePage(page);
                         },
                       ),
-                         SignIn(
-                        aBackToHome: () {
-                          _changePage(0);
+                      //    SignIn(
+                      //   aBackToHome: () {
+                      //     _changePage(0);
                          
-                        },
-                      ),
-                      CreateLogin(
-                        cancelBackToHome: () {
-                          _changePage(0);
-                        },
-                      ),
+                      //   },
+                      // ),
+                      // SignUpView(
+                      //   cancelBackToHome: () {
+                      //     _changePage(0);
+                      //   },
+                      // ),
                     ],
                   ),
                 ),

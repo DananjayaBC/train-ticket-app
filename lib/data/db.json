@@ -1,0 +1,1999 @@
+
+
+{
+    "stations":
+[
+
+    {
+      "code": "ABN",
+      "id": 3,
+      "name": "ABANPOLA"
+    },
+    {
+      "code": "ADAGALA",
+      "id": 410,
+      "name": "ADAGALA"
+    },
+    {
+      "code": "ANM",
+      "id": 11,
+      "name": "AHANGAMA"
+    },
+    {
+      "code": "AUH",
+      "id": 18,
+      "name": "AHUNGALLE"
+    },
+    {
+      "code": "APR",
+      "id": 13,
+      "name": "AKBOPURA"
+    },
+    {
+      "code": "AKU",
+      "id": 7,
+      "name": "AKURALA"
+    },
+    {
+      "code": "AWP",
+      "id": 22,
+      "name": "ALAWATUPITIYA"
+    },
+    {
+      "code": "ALW",
+      "id": 9,
+      "name": "ALAWWA"
+    },
+    {
+      "code": "ATB",
+      "id": 329,
+      "name": "ALUTH AMBALAMA"
+    },
+    {
+      "code": "ALT",
+      "id": 8,
+      "name": "ALUTHGAMA"
+    },
+    {
+      "code": "ABA",
+      "id": 1,
+      "name": "AMBALANGODA"
+    },
+    {
+      "code": "ABL",
+      "id": 2,
+      "name": "AMBEWELA"
+    },
+    {
+      "code": "APS",
+      "id": 14,
+      "name": "AMBEYPUSSA"
+    },
+    {
+      "code": "AVD",
+      "id": 19,
+      "name": "ANAWILUNDAWA"
+    },
+    {
+      "code": "AND",
+      "id": 10,
+      "name": "ANDADOLA"
+    },
+    {
+      "code": "AGT",
+      "id": 5,
+      "name": "ANGAMPITIYA"
+    },
+    {
+      "code": "AGL",
+      "id": 4,
+      "name": "ANGULANA"
+    },
+    {
+      "code": "ANP",
+      "id": 12,
+      "name": "ANURADHAPURA"
+    },
+    {
+      "code": "APT",
+      "id": 15,
+      "name": "ANURADHAPURA TOWN"
+    },
+    {
+      "code": "AKT",
+      "id": 6,
+      "name": "ARACHCHIKATTUWA"
+    },
+    {
+      "code": "ARP",
+      "id": 343,
+      "name": "ARAPATHGAMA"
+    },
+    {
+      "code": "ARW",
+      "id": 16,
+      "name": "ARUKKUWATTE"
+    },
+    {
+      "code": "ASL",
+      "id": 17,
+      "name": "ASELAPURA"
+    },
+    {
+      "code": "AGR",
+      "id": 467,
+      "name": "ASGIRIYA"
+    },
+    {
+      "code": "AWK",
+      "id": 21,
+      "name": "AUKANA"
+    },
+    {
+      "code": "AVS",
+      "id": 20,
+      "name": "AVISSAWELLA"
+    },
+    {
+      "code": "BAD",
+      "id": 23,
+      "name": "BADULLA"
+    },
+    {
+      "code": "BNA",
+      "id": 31,
+      "name": "BALANA"
+    },
+    {
+      "code": "BPA",
+      "id": 34,
+      "name": "BALAPITIYA"
+    },
+    {
+      "code": "BPT",
+      "id": 35,
+      "name": "BAMBALAPITIYA"
+    },
+    {
+      "code": "BDA",
+      "id": 25,
+      "name": "BANDARAWELA"
+    },
+    {
+      "code": "Bandirippuwa",
+      "id": 475,
+      "name": "Bandirippuwa"
+    },
+    {
+      "code": "BGY",
+      "id": 28,
+      "name": "BANGADENIYA"
+    },
+    {
+      "code": "BSL",
+      "id": 39,
+      "name": "BASELINE ROAD"
+    },
+    {
+      "code": "BOA",
+      "id": 33,
+      "name": "BATTALUOYA"
+    },
+    {
+      "code": "BCO",
+      "id": 24,
+      "name": "BATTICALOA"
+    },
+    {
+      "code": "BTU",
+      "id": 41,
+      "name": "BATUWATTE"
+    },
+    {
+      "code": "BEM",
+      "id": 26,
+      "name": "BEMMULLA"
+    },
+    {
+      "code": "BNT",
+      "id": 32,
+      "name": "BENTOTA"
+    },
+    {
+      "code": "BRL",
+      "id": 36,
+      "name": "BERUWALA"
+    },
+    {
+      "code": "BLT",
+      "id": 30,
+      "name": "BOLAWATTE"
+    },
+    {
+      "code": "BSH",
+      "id": 38,
+      "name": "BOOSSA"
+    },
+    {
+      "code": "BSA",
+      "id": 37,
+      "name": "BORELESSA"
+    },
+    {
+      "code": "BTL",
+      "id": 40,
+      "name": "BOTALE"
+    },
+    {
+      "code": "BGH",
+      "id": 27,
+      "name": "BULUGAHAGODA"
+    },
+    {
+      "code": "BJM",
+      "id": 29,
+      "name": "BUTHGAMUWA"
+    },
+    {
+      "code": "CCH",
+      "id": 398,
+      "name": "CHAVAKACHCHERI"
+    },
+    {
+      "code": "CDK",
+      "id": 371,
+      "name": "CHEDDIIKULAM"
+    },
+    {
+      "code": "CHL",
+      "id": 44,
+      "name": "CHILAW"
+    },
+    {
+      "code": "CBY",
+      "id": 43,
+      "name": "CHINA BEY"
+    },
+    {
+      "code": "CKM",
+      "id": 423,
+      "name": "CHUNNAKAM"
+    },
+    {
+      "code": "FOT",
+      "id": 61,
+      "name": "COLOMBO FORT"
+    },
+    {
+      "code": "CRD",
+      "id": 46,
+      "name": "COTTA ROAD"
+    },
+    {
+      "code": "DRL",
+      "id": 53,
+      "name": "DARALUWA"
+    },
+    {
+      "code": "DEC",
+      "id": 457,
+      "name": "DEC"
+    },
+    {
+      "code": "DWL",
+      "id": 54,
+      "name": "DEHIWALA"
+    },
+    {
+      "code": "DKD",
+      "id": 337,
+      "name": "Dekinda"
+    },
+    {
+      "code": "DAG",
+      "id": 47,
+      "name": "DEMATAGODA"
+    },
+    {
+      "code": "DDR",
+      "id": 48,
+      "name": "DEMODARA"
+    },
+    {
+      "code": "DPM",
+      "id": 52,
+      "name": "DEWAPURAM"
+    },
+    {
+      "code": "DEWEDDA",
+      "id": 417,
+      "name": "DEWEDDA"
+    },
+    {
+      "code": "DLA",
+      "id": 50,
+      "name": "DIYATALAWA"
+    },
+    {
+      "code": "DNA",
+      "id": 51,
+      "name": "DODANDUWA"
+    },
+    {
+      "code": "EYA",
+      "id": 60,
+      "name": "EGODA UYANA"
+    },
+    {
+      "code": "EPS",
+      "id": 395,
+      "name": "ELIPHANT PASS"
+    },
+    {
+      "code": "ELL",
+      "id": 57,
+      "name": "ELLE"
+    },
+    {
+      "code": "EML",
+      "id": 401,
+      "name": "ELUTHUMATTUVAL"
+    },
+    {
+      "code": "ELW",
+      "id": 341,
+      "name": "ELWALA"
+    },
+    {
+      "code": "EDM",
+      "id": 55,
+      "name": "ENDERAMULLA"
+    },
+    {
+      "code": "EKM",
+      "id": 56,
+      "name": "ERATTAPERIYAKULAM"
+    },
+    {
+      "code": "EVR",
+      "id": 59,
+      "name": "ERAVUR"
+    },
+    {
+      "code": "EPN",
+      "id": 58,
+      "name": "ERUKKALAM PENDU"
+    },
+    {
+      "code": "IPZ",
+      "id": 104,
+      "name": "FREE TRADE ZONE"
+    },
+    {
+      "code": "GBD",
+      "id": 64,
+      "name": "GALABODA"
+    },
+    {
+      "code": "GLM",
+      "id": 69,
+      "name": "GALGAMUWA"
+    },
+    {
+      "code": "GLE",
+      "id": 68,
+      "name": "GALLE"
+    },
+    {
+      "code": "GAL",
+      "id": 62,
+      "name": "GALLELLA"
+    },
+    {
+      "code": "GOA",
+      "id": 74,
+      "name": "GALOYA JUNCTION"
+    },
+    {
+      "code": "GMA",
+      "id": 70,
+      "name": "GAMMANA"
+    },
+    {
+      "code": "GPH",
+      "id": 75,
+      "name": "GAMPAHA"
+    },
+    {
+      "code": "GPL",
+      "id": 76,
+      "name": "GAMPOLA"
+    },
+    {
+      "code": "GND",
+      "id": 71,
+      "name": "GANEGODA"
+    },
+    {
+      "code": "GAN",
+      "id": 63,
+      "name": "GANEMULLA"
+    },
+    {
+      "code": "GNW",
+      "id": 73,
+      "name": "GANEWATTE"
+    },
+    {
+      "code": "Gangathilaka",
+      "id": 479,
+      "name": "Gangathilaka"
+    },
+    {
+      "code": "GDA",
+      "id": 65,
+      "name": "GANGODA"
+    },
+    {
+      "code": "GTL",
+      "id": 440,
+      "name": "GANTALAWA"
+    },
+    {
+      "code": "GEY",
+      "id": 66,
+      "name": "GELIOYA"
+    },
+    {
+      "code": "GNT",
+      "id": 72,
+      "name": "GINTHOTA"
+    },
+    {
+      "code": "GRB",
+      "id": 476,
+      "name": "GIRAMBE"
+    },
+    {
+      "code": "GRB",
+      "id": 77,
+      "name": "GIRAMBE"
+    },
+    {
+      "code": "GGA",
+      "id": 67,
+      "name": "GODAGAMA"
+    },
+    {
+      "code": "GWN",
+      "id": 79,
+      "name": "GREAT WESTERN"
+    },
+    {
+      "code": "HBD",
+      "id": 81,
+      "name": "HABARADUWA"
+    },
+    {
+      "code": "HBN",
+      "id": 82,
+      "name": "HABARANA"
+    },
+    {
+      "code": "HADIRIWALANA",
+      "id": 456,
+      "name": "Hadiriwalana"
+    },
+    {
+      "code": "HEA",
+      "id": 84,
+      "name": "HALIELA"
+    },
+    {
+      "code": "HPT",
+      "id": 92,
+      "name": "HAPUTALE"
+    },
+    {
+      "code": "HAU",
+      "id": 80,
+      "name": "HATAMUNA"
+    },
+    {
+      "code": "HKT",
+      "id": 87,
+      "name": "HATARAS KOTUWA"
+    },
+    {
+      "code": "HTN",
+      "id": 96,
+      "name": "HATTON"
+    },
+    {
+      "code": "HLO",
+      "id": 89,
+      "name": "HEEL OYA"
+    },
+    {
+      "code": "HDP",
+      "id": 83,
+      "name": "HEENDENIYA"
+    },
+    {
+      "code": "HML",
+      "id": 91,
+      "name": "HETTIMULLA"
+    },
+    {
+      "code": "HKD",
+      "id": 86,
+      "name": "HIKKADUWA"
+    },
+    {
+      "code": "HRG",
+      "id": 93,
+      "name": "HINGURAKGODA"
+    },
+    {
+      "code": "Hingurala",
+      "id": 444,
+      "name": "HINGURALA"
+    },
+    {
+      "code": "HRL",
+      "id": 94,
+      "name": "HIRIYALA"
+    },
+    {
+      "code": "HMA",
+      "id": 90,
+      "name": "HOMAGAMA"
+    },
+    {
+      "code": "HHR",
+      "id": 85,
+      "name": "HOMAGAMA HOSPITAL"
+    },
+    {
+      "code": "HRP",
+      "id": 95,
+      "name": "HORAPE"
+    },
+    {
+      "code": "HLA",
+      "id": 88,
+      "name": "HORIWIALA"
+    },
+    {
+      "code": "HUN",
+      "id": 97,
+      "name": "HUNUPITIYA"
+    },
+    {
+      "code": "HYP",
+      "id": 98,
+      "name": "HYINPORT"
+    },
+    {
+      "code": "IGH",
+      "id": 100,
+      "name": "IDALGASINNA"
+    },
+    {
+      "code": "IHA",
+      "id": 101,
+      "name": "IHALAGAMA"
+    },
+    {
+      "code": "IKT",
+      "id": 102,
+      "name": "IHALAKOTTE"
+    },
+    {
+      "code": "IWL",
+      "id": 105,
+      "name": "IHALAWATAWALA"
+    },
+    {
+      "code": "IDA",
+      "id": 99,
+      "name": "INDURUWA"
+    },
+    {
+      "code": "INO",
+      "id": 103,
+      "name": "INGURUOYA"
+    },
+    {
+      "code": "INL",
+      "id": 428,
+      "name": "INUVIL"
+    },
+    {
+      "code": "JLA",
+      "id": 107,
+      "name": "JA-ELA"
+    },
+    {
+      "code": "JFN",
+      "id": 400,
+      "name": "JAFFNA"
+    },
+    {
+      "code": "JAP",
+      "id": 106,
+      "name": "JAYANTHIPURA"
+    },
+    {
+      "code": "KCH",
+      "id": 338,
+      "name": "KACHCHERI HALL"
+    },
+    {
+      "code": "KDN",
+      "id": 114,
+      "name": "KADADASI NAGAR"
+    },
+    {
+      "code": "KMA",
+      "id": 128,
+      "name": "KADIGAMUWA"
+    },
+    {
+      "code": "KGW",
+      "id": 120,
+      "name": "KADUGANNAWA"
+    },
+    {
+      "code": "KDG",
+      "id": 113,
+      "name": "KADUGODA"
+    },
+    {
+      "code": "Kahatapitiya",
+      "id": 480,
+      "name": "Kahatapitiya"
+    },
+    {
+      "code": "KWE",
+      "id": 152,
+      "name": "KAHAWA"
+    },
+    {
+      "code": "KYA",
+      "id": 154,
+      "name": "KAKKAPALLIYA"
+    },
+    {
+      "code": "KLW",
+      "id": 127,
+      "name": "KALAWEWA"
+    },
+    {
+      "code": "KKH",
+      "id": 123,
+      "name": "KALKUDAH"
+    },
+    {
+      "code": "KTN",
+      "id": 147,
+      "name": "KALUTARA NORTH"
+    },
+    {
+      "code": "KTS",
+      "id": 148,
+      "name": "KALUTARA SOUTH"
+    },
+    {
+      "code": "KMG",
+      "id": 130,
+      "name": "KAMBURUGAMUWA"
+    },
+    {
+      "code": "KAN",
+      "id": 108,
+      "name": "KANDANA"
+    },
+    {
+      "code": "KGD",
+      "id": 119,
+      "name": "KANDEGODA"
+    },
+    {
+      "code": "KDT",
+      "id": 115,
+      "name": "KANDY"
+    },
+    {
+      "code": "KKS",
+      "id": 424,
+      "name": "KANKESANTHURAI"
+    },
+    {
+      "code": "KNI",
+      "id": 132,
+      "name": "KANTALE"
+    },
+    {
+      "code": "KAW",
+      "id": 110,
+      "name": "KAPUWATTE"
+    },
+    {
+      "code": "KPL",
+      "id": 139,
+      "name": "KARADIPUWAL"
+    },
+    {
+      "code": "KTL",
+      "id": 146,
+      "name": "KATHALUWA"
+    },
+    {
+      "code": "KAT",
+      "id": 109,
+      "name": "KATTUWA"
+    },
+    {
+      "code": "KTG",
+      "id": 144,
+      "name": "KATUGASTOTA"
+    },
+    {
+      "code": "KTG ROAD",
+      "id": 468,
+      "name": "KATUGASTOTA     ROAD"
+    },
+    {
+      "code": "KUG",
+      "id": 150,
+      "name": "KATUGODA"
+    },
+    {
+      "code": "KKD",
+      "id": 122,
+      "name": "KATUKURUNDA"
+    },
+    {
+      "code": "CAK",
+      "id": 42,
+      "name": "KATUNAYAKA AIRPORT"
+    },
+    {
+      "code": "KTK",
+      "id": 145,
+      "name": "KATUNAYAKE"
+    },
+    {
+      "code": "KEN",
+      "id": 117,
+      "name": "KEENAWALA"
+    },
+    {
+      "code": "KRA",
+      "id": 141,
+      "name": "KEKIRAWA"
+    },
+    {
+      "code": "KLA",
+      "id": 124,
+      "name": "KELANIYA"
+    },
+    {
+      "code": "KOC",
+      "id": 333,
+      "name": "KILINOCHCHI"
+    },
+    {
+      "code": "KNM",
+      "id": 133,
+      "name": "KINIGAMA"
+    },
+    {
+      "code": "KRW",
+      "id": 447,
+      "name": "KIRINDIWELA"
+    },
+    {
+      "code": "KPE",
+      "id": 138,
+      "name": "KIRULAPANA"
+    },
+    {
+      "code": "KEL",
+      "id": 116,
+      "name": "KITAL ELLE"
+    },
+    {
+      "code": "KCH",
+      "id": 111,
+      "name": "KOCHCHIKADE"
+    },
+    {
+      "code": "KKM",
+      "id": 397,
+      "name": "KODIKAMAM"
+    },
+    {
+      "code": "KOG",
+      "id": 134,
+      "name": "KOGGALA"
+    },
+    {
+      "code": "KOM",
+      "id": 474,
+      "name": "KOHOMBILIWALA"
+    },
+    {
+      "code": "KKV",
+      "id": 429,
+      "name": "KOKUVIL"
+    },
+    {
+      "code": "KLP",
+      "id": 126,
+      "name": "KOLLUPITIYA"
+    },
+    {
+      "code": "KLN",
+      "id": 453,
+      "name": "KOLONNAWA"
+    },
+    {
+      "code": "KLN",
+      "id": 125,
+      "name": "KOLONNAWA"
+    },
+    {
+      "code": "KPN",
+      "id": 140,
+      "name": "KOMPANNAVEDIYA"
+    },
+    {
+      "code": "KDV",
+      "id": 422,
+      "name": "KONDAVIL"
+    },
+    {
+      "code": "KON",
+      "id": 135,
+      "name": "KONWEWA"
+    },
+    {
+      "code": "KOR",
+      "id": 136,
+      "name": "KORALAWELLA"
+    },
+    {
+      "code": "KSG",
+      "id": 143,
+      "name": "KOSGAMA"
+    },
+    {
+      "code": "KDA",
+      "id": 112,
+      "name": "KOSGODA"
+    },
+    {
+      "code": "KHA",
+      "id": 121,
+      "name": "KOSHINNA"
+    },
+    {
+      "code": "KGA",
+      "id": 118,
+      "name": "KOTAGALA"
+    },
+    {
+      "code": "KOT",
+      "id": 137,
+      "name": "KOTTAWA"
+    },
+    {
+      "code": "KWW",
+      "id": 153,
+      "name": "KUDA WAWA"
+    },
+    {
+      "code": "KUD",
+      "id": 149,
+      "name": "KUDAHAKAPOLA"
+    },
+    {
+      "code": "KMK",
+      "id": 131,
+      "name": "KUMARAKANDA"
+    },
+    {
+      "code": "KMB",
+      "id": 129,
+      "name": "KUMBALGAMA"
+    },
+    {
+      "code": "Karahanhenagama",
+      "id": 408,
+      "name": "KURAHANHENAGAMA"
+    },
+    {
+      "code": "KUR",
+      "id": 151,
+      "name": "KURANA"
+    },
+    {
+      "code": "KRN",
+      "id": 142,
+      "name": "KURUNEGALA"
+    },
+    {
+      "code": "LYA",
+      "id": 158,
+      "name": "LAKSAUYANA"
+    },
+    {
+      "code": "LGM",
+      "id": 155,
+      "name": "LIYANAGEMULLA"
+    },
+    {
+      "code": "LIYANWALA",
+      "id": 334,
+      "name": "LIYANWALA"
+    },
+    {
+      "code": "LNA",
+      "id": 156,
+      "name": "LUNAWA"
+    },
+    {
+      "code": "LWL",
+      "id": 157,
+      "name": "LUNUWILA"
+    },
+    {
+      "code": "MPA",
+      "id": 181,
+      "name": "MADAMPAGAMA"
+    },
+    {
+      "code": "MDP",
+      "id": 161,
+      "name": "MADAMPE"
+    },
+    {
+      "code": "MRD",
+      "id": 372,
+      "name": "MADHU ROAD"
+    },
+    {
+      "code": "MKI",
+      "id": 174,
+      "name": "MADURANKULIYA"
+    },
+    {
+      "code": "MAGALEGODA",
+      "id": 472,
+      "name": "Magalegoda"
+    },
+    {
+      "code": "MGG",
+      "id": 393,
+      "name": "MAGALEGODA"
+    },
+    {
+      "code": "MGN",
+      "id": 167,
+      "name": "MAGGONA"
+    },
+    {
+      "code": "MGG",
+      "id": 452,
+      "name": "MAGULEGODA"
+    },
+    {
+      "code": "MYA",
+      "id": 190,
+      "name": "MAHAIYAWA"
+    },
+    {
+      "code": "MAG",
+      "id": 159,
+      "name": "MAHARAGAMA"
+    },
+    {
+      "code": "MHO",
+      "id": 170,
+      "name": "MAHO"
+    },
+    {
+      "code": "MPL",
+      "id": 182,
+      "name": "MALAPALLE"
+    },
+    {
+      "code": "MAL",
+      "id": 427,
+      "name": "MALLAKAM"
+    },
+    {
+      "code": "MPT",
+      "id": 183,
+      "name": "MANAMPITIYA"
+    },
+    {
+      "code": "MGE",
+      "id": 165,
+      "name": "MANGALAELIYA"
+    },
+    {
+      "code": "MKM",
+      "id": 331,
+      "name": "MANKULAM"
+    },
+    {
+      "code": "MAN",
+      "id": 434,
+      "name": "MANNAR"
+    },
+    {
+      "code": "MNG",
+      "id": 179,
+      "name": "MANUWANGAMA"
+    },
+    {
+      "code": "MDA",
+      "id": 160,
+      "name": "MARADANA"
+    },
+    {
+      "code": "MRK",
+      "id": 462,
+      "name": "MARAKONA"
+    },
+    {
+      "code": "MRL",
+      "id": 454,
+      "name": "MARALUWEWA"
+    },
+    {
+      "code": "MTL",
+      "id": 186,
+      "name": "MATALE"
+    },
+    {
+      "code": "MTR",
+      "id": 187,
+      "name": "MATARA"
+    },
+    {
+      "code": "MTM",
+      "id": 432,
+      "name": "MATHOTTAM"
+    },
+    {
+      "code": "MWD",
+      "id": 466,
+      "name": "MAVILMADA"
+    },
+    {
+      "code": "MVT",
+      "id": 425,
+      "name": "MAVITTAPURAM"
+    },
+    {
+      "code": "MEM",
+      "id": 163,
+      "name": "MEDAGAMA"
+    },
+    {
+      "code": "MWH",
+      "id": 189,
+      "name": "MEDAWACHCHIYA"
+    },
+    {
+      "code": "MEDDEGAMA",
+      "id": 421,
+      "name": "MEDDEGAMA"
+    },
+    {
+      "code": "MGN",
+      "id": 464,
+      "name": "MEEGAMMANA"
+    },
+    {
+      "code": "MGD",
+      "id": 164,
+      "name": "MEEGODA"
+    },
+    {
+      "code": "MES",
+      "id": 403,
+      "name": "MEESALAI"
+    },
+    {
+      "code": "MWA",
+      "id": 188,
+      "name": "MHA INDURUWA"
+    },
+    {
+      "code": "MED",
+      "id": 162,
+      "name": "MIDIGAMA"
+    },
+    {
+      "code": "MHN",
+      "id": 169,
+      "name": "MIHINTALE"
+    },
+    {
+      "code": "MHJ",
+      "id": 168,
+      "name": "MIHINTALE JUNCTION"
+    },
+    {
+      "code": "MIY",
+      "id": 173,
+      "name": "MINNERIYA"
+    },
+    {
+      "code": "MIR",
+      "id": 171,
+      "name": "MIRIGAMA"
+    },
+    {
+      "code": "MIRIHANPITIGAMA",
+      "id": 409,
+      "name": "MIRIHANPITIGAMA"
+    },
+    {
+      "code": "MIS",
+      "id": 172,
+      "name": "MIRISSA"
+    },
+    {
+      "code": "Miriswatte",
+      "id": 443,
+      "name": "MIRISWATTA"
+    },
+    {
+      "code": "MSL",
+      "id": 402,
+      "name": "MIRUSUVIL"
+    },
+    {
+      "code": "MLP",
+      "id": 177,
+      "name": "MOLLIPATANA"
+    },
+    {
+      "code": "MLG",
+      "id": 176,
+      "name": "MORAGOLLAGAMA"
+    },
+    {
+      "code": "MKP",
+      "id": 175,
+      "name": "MORAKELE"
+    },
+    {
+      "code": "MRT",
+      "id": 184,
+      "name": "MORATUWA"
+    },
+    {
+      "code": "MLV",
+      "id": 439,
+      "name": "MOUNT LAVINIA"
+    },
+    {
+      "code": "MNL",
+      "id": 180,
+      "name": "MUNDAL"
+    },
+    {
+      "code": "MRK",
+      "id": 332,
+      "name": "MURIKANDY"
+    },
+    {
+      "code": "MUK",
+      "id": 431,
+      "name": "MURUNKAN"
+    },
+    {
+      "code": "MTG",
+      "id": 185,
+      "name": "MUTHTHETTUGALA"
+    },
+    {
+      "code": "NAG",
+      "id": 191,
+      "name": "NAGOLLAGAMA"
+    },
+    {
+      "code": "NLY",
+      "id": 196,
+      "name": "NAILIYA"
+    },
+    {
+      "code": "NOA",
+      "id": 197,
+      "name": "NANUOYA"
+    },
+    {
+      "code": "NHP",
+      "id": 195,
+      "name": "NARAHENPITA"
+    },
+    {
+      "code": "NAT",
+      "id": 192,
+      "name": "NATTANDIYA"
+    },
+    {
+      "code": "NVT",
+      "id": 399,
+      "name": "NAVATKULI"
+    },
+    {
+      "code": "NVP",
+      "id": 201,
+      "name": "NAWALAPITIYA"
+    },
+    {
+      "code": "NWN",
+      "id": 202,
+      "name": "NAWINNA"
+    },
+    {
+      "code": "NGM",
+      "id": 194,
+      "name": "NEGAMA"
+    },
+    {
+      "code": "NGB",
+      "id": 193,
+      "name": "NEGOMBO"
+    },
+    {
+      "code": "NELUMPATHGAMA",
+      "id": 415,
+      "name": "NELUMPATHGAMA"
+    },
+    {
+      "code": "NPK",
+      "id": 199,
+      "name": "NELUMPOKUNA"
+    },
+    {
+      "code": "NYK",
+      "id": 370,
+      "name": "NERIYAKULAM"
+    },
+    {
+      "code": "NOR",
+      "id": 198,
+      "name": "NOORANAGAR"
+    },
+    {
+      "code": "NUG",
+      "id": 200,
+      "name": "NUGEGODA"
+    },
+    {
+      "code": "OHA",
+      "id": 203,
+      "name": "OHIYA"
+    },
+    {
+      "code": "OMT",
+      "id": 204,
+      "name": "OMANTHAI"
+    },
+    {
+      "code": "PDK",
+      "id": 208,
+      "name": "PADUKKA"
+    },
+    {
+      "code": "PAHALAWARDHANA",
+      "id": 420,
+      "name": "PAHALAWARDHANA"
+    },
+    {
+      "code": "PVI",
+      "id": 238,
+      "name": "PALAVI"
+    },
+    {
+      "code": "PAL",
+      "id": 396,
+      "name": "PALLAI"
+    },
+    {
+      "code": "PALLE TALAWINNA",
+      "id": 465,
+      "name": "PALLE TALAVINNA"
+    },
+    {
+      "code": "PLL",
+      "id": 219,
+      "name": "PALLEWALA"
+    },
+    {
+      "code": "PUW",
+      "id": 237,
+      "name": "PALUGASWEWA"
+    },
+    {
+      "code": "PND",
+      "id": 223,
+      "name": "PANADURA"
+    },
+    {
+      "code": "PNG",
+      "id": 224,
+      "name": "PANAGODA"
+    },
+    {
+      "code": "PNL",
+      "id": 226,
+      "name": "PANALEEYA"
+    },
+    {
+      "code": "PRW",
+      "id": 233,
+      "name": "PANGIRIWATTA"
+    },
+    {
+      "code": "PAN",
+      "id": 205,
+      "name": "PANNIPITIYA"
+    },
+    {
+      "code": "PKU",
+      "id": 216,
+      "name": "PARAKUMPURA"
+    },
+    {
+      "code": "PRN",
+      "id": 394,
+      "name": "PARANTHAN"
+    },
+    {
+      "code": "PHW",
+      "id": 213,
+      "name": "PARASANGAHAWEWA"
+    },
+    {
+      "code": "PGD",
+      "id": 209,
+      "name": "PATAGAMGODA"
+    },
+    {
+      "code": "PTP",
+      "id": 236,
+      "name": "PATHANPHA"
+    },
+    {
+      "code": "PPL",
+      "id": 230,
+      "name": "PATTIPOLA"
+    },
+    {
+      "code": "PGN",
+      "id": 211,
+      "name": "PAYAGALA NORTH"
+    },
+    {
+      "code": "PGS",
+      "id": 212,
+      "name": "PAYAGALA SOUTH"
+    },
+    {
+      "code": "PRP",
+      "id": 232,
+      "name": "PEMROSE"
+    },
+    {
+      "code": "PDA",
+      "id": 207,
+      "name": "PERADENIYA"
+    },
+    {
+      "code": "PKP",
+      "id": 459,
+      "name": "PERAKUMPURA"
+    },
+    {
+      "code": "PRL",
+      "id": 231,
+      "name": "PERALANDA"
+    },
+    {
+      "code": "PNV",
+      "id": 227,
+      "name": "PERIYANAGAVILLU"
+    },
+    {
+      "code": "PES",
+      "id": 436,
+      "name": "PESALAI"
+    },
+    {
+      "code": "PLD",
+      "id": 217,
+      "name": "PILIDUWA"
+    },
+    {
+      "code": "PLT",
+      "id": 222,
+      "name": "PILIMATALAWA"
+    },
+    {
+      "code": "PINNAGOLLA",
+      "id": 416,
+      "name": "PINNAGOLLA"
+    },
+    {
+      "code": "PNW",
+      "id": 228,
+      "name": "PINNAWALA"
+    },
+    {
+      "code": "PIN",
+      "id": 214,
+      "name": "PINWATTE"
+    },
+    {
+      "code": "PGM",
+      "id": 210,
+      "name": "PIYADIGAMA"
+    },
+    {
+      "code": "PYA",
+      "id": 240,
+      "name": "PIYAGAMA"
+    },
+    {
+      "code": "Polgaha Anga",
+      "id": 477,
+      "name": "Polgaha Anga"
+    },
+    {
+      "code": "PLG",
+      "id": 218,
+      "name": "POLGAHAWELA"
+    },
+    {
+      "code": "PLN",
+      "id": 220,
+      "name": "POLONNARUWA"
+    },
+    {
+      "code": "PLR",
+      "id": 221,
+      "name": "POLWATHUMODARA"
+    },
+    {
+      "code": "PON",
+      "id": 229,
+      "name": "POONEWA"
+    },
+    {
+      "code": "PORAPOLA",
+      "id": 419,
+      "name": "PORAPOLA"
+    },
+    {
+      "code": "PORAPOLA JUNC.",
+      "id": 418,
+      "name": "PORAPOLA JUNC."
+    },
+    {
+      "code": "PTA",
+      "id": 234,
+      "name": "POTUHERA"
+    },
+    {
+      "code": "PCK",
+      "id": 206,
+      "name": "PULACHCHIKULAM"
+    },
+    {
+      "code": "PKM",
+      "id": 330,
+      "name": "PULIYANKULAM"
+    },
+    {
+      "code": "PNI",
+      "id": 225,
+      "name": "PUNANI"
+    },
+    {
+      "code": "PNK",
+      "id": 406,
+      "name": "PUNKANKULAM"
+    },
+    {
+      "code": "PTM",
+      "id": 235,
+      "name": "PUTTALAM"
+    },
+    {
+      "code": "PWP",
+      "id": 445,
+      "name": "PUWAKPITIYA"
+    },
+    {
+      "code": "PWP Town",
+      "id": 446,
+      "name": "PUWAKPITIYA TOWN"
+    },
+    {
+      "code": "RDL",
+      "id": 243,
+      "name": "RADELLA"
+    },
+    {
+      "code": "RGM",
+      "id": 246,
+      "name": "RAGAMA"
+    },
+    {
+      "code": "RBK",
+      "id": 241,
+      "name": "RAMBUKKANA"
+    },
+    {
+      "code": "RMA",
+      "id": 247,
+      "name": "RANAMUGGAMUWA"
+    },
+    {
+      "code": "RGA",
+      "id": 245,
+      "name": "RANDENIGAMA"
+    },
+    {
+      "code": "RTG",
+      "id": 249,
+      "name": "RATHGAMA"
+    },
+    {
+      "code": "RML",
+      "id": 248,
+      "name": "RATMALANA"
+    },
+    {
+      "code": "RDL",
+      "id": 244,
+      "name": "REDEETHENNA"
+    },
+    {
+      "code": "RCH",
+      "id": 242,
+      "name": "RICHMOND HILL"
+    },
+    {
+      "code": "RZL",
+      "id": 250,
+      "name": "ROSELLA"
+    },
+    {
+      "code": "SAL",
+      "id": 251,
+      "name": "SALIYAPURA"
+    },
+    {
+      "code": "SAK",
+      "id": 404,
+      "name": "SANKATHANAI"
+    },
+    {
+      "code": "SUA",
+      "id": 257,
+      "name": "SARASAVIUYANA"
+    },
+    {
+      "code": "SWR",
+      "id": 259,
+      "name": "SAWARANA"
+    },
+    {
+      "code": "SCR",
+      "id": 252,
+      "name": "SECRETARTAT HALT"
+    },
+    {
+      "code": "SED",
+      "id": 253,
+      "name": "SEEDUWA"
+    },
+    {
+      "code": "SMA",
+      "id": 255,
+      "name": "SEENIGAMA"
+    },
+    {
+      "code": "SGM",
+      "id": 254,
+      "name": "SENARATHGAMA"
+    },
+    {
+      "code": "SVP",
+      "id": 258,
+      "name": "SEVANAPITIYA"
+    },
+    {
+      "code": "SLM",
+      "id": 339,
+      "name": "SIYABALANGAMUWA"
+    },
+    {
+      "code": "SYA",
+      "id": 260,
+      "name": "SIYALANGAMUWA"
+    },
+    {
+      "code": "SRP",
+      "id": 256,
+      "name": "SRAWASTHIPURA"
+    },
+    {
+      "code": "TLM",
+      "id": 437,
+      "name": "TALAIMANNAR"
+    },
+    {
+      "code": "TMP",
+      "id": 438,
+      "name": "TALAIMANNAR PIER"
+    },
+    {
+      "code": "TLA",
+      "id": 270,
+      "name": "TALAWA"
+    },
+    {
+      "code": "TKL",
+      "id": 269,
+      "name": "TALAWAKELE"
+    },
+    {
+      "code": "TWG",
+      "id": 276,
+      "name": "TALAWATTEGEDARA"
+    },
+    {
+      "code": "TWO",
+      "id": 461,
+      "name": "TAWALANOYA"
+    },
+    {
+      "code": "TPI",
+      "id": 426,
+      "name": "TELLIPALLAI"
+    },
+    {
+      "code": "TWT",
+      "id": 277,
+      "name": "TELWATTE"
+    },
+    {
+      "code": "TBL",
+      "id": 262,
+      "name": "TEMBLIGALA"
+    },
+    {
+      "code": "TPH",
+      "id": 405,
+      "name": "THACHANTHOPPU"
+    },
+    {
+      "code": "TLP",
+      "id": 271,
+      "name": "THALPE"
+    },
+    {
+      "code": "THAMBAGALLA",
+      "id": 414,
+      "name": "THAMBAGALLA"
+    },
+    {
+      "code": "TBM",
+      "id": 263,
+      "name": "THAMBUTTEGAMA"
+    },
+    {
+      "code": "TAN",
+      "id": 450,
+      "name": "THAMPALAKAMAM"
+    },
+    {
+      "code": "TDK",
+      "id": 265,
+      "name": "THANDIKULAM"
+    },
+    {
+      "code": "TVM",
+      "id": 433,
+      "name": "THIIRUKETHEESWARAM"
+    },
+    {
+      "code": "TDY",
+      "id": 267,
+      "name": "THILLADIYA"
+    },
+    {
+      "code": "TNA",
+      "id": 272,
+      "name": "THIRANAGAMA"
+    },
+    {
+      "code": "TVD",
+      "id": 435,
+      "name": "THODDAVELI"
+    },
+    {
+      "code": "THURULIYAGAMA",
+      "id": 455,
+      "name": "Thuruliyagama"
+    },
+    {
+      "code": "TIM",
+      "id": 268,
+      "name": "TIMBIRIYAGEDARA"
+    },
+    {
+      "code": "TSM",
+      "id": 274,
+      "name": "TISMALPOLA"
+    },
+    {
+      "code": "TRH",
+      "id": 273,
+      "name": "TRAIN HALT 01"
+    },
+    {
+      "code": "TCO",
+      "id": 264,
+      "name": "TRINCOMALEE"
+    },
+    {
+      "code": "TUD",
+      "id": 275,
+      "name": "TUDELLA"
+    },
+    {
+      "code": "TDR",
+      "id": 266,
+      "name": "TUMMODARA"
+    },
+    {
+      "code": "UDL",
+      "id": 278,
+      "name": "UDATALAWINNA"
+    },
+    {
+      "code": "UWL",
+      "id": 285,
+      "name": "UDATHTHAWALA"
+    },
+    {
+      "code": "UHM",
+      "id": 281,
+      "name": "UDHAMULLA"
+    },
+    {
+      "code": "UDUGODAGAMA",
+      "id": 413,
+      "name": "UDUGODAGAMA"
+    },
+    {
+      "code": "UDW",
+      "id": 279,
+      "name": "UDUWARA"
+    },
+    {
+      "code": "UGL",
+      "id": 280,
+      "name": "UGGALLA"
+    },
+    {
+      "code": "UKL",
+      "id": 282,
+      "name": "UKUWELA"
+    },
+    {
+      "code": "ULP",
+      "id": 283,
+      "name": "ULAPANE"
+    },
+    {
+      "code": "UNW",
+      "id": 284,
+      "name": "UNAWATUNA"
+    },
+    {
+      "code": "URW",
+      "id": 451,
+      "name": "Urugodawattha"
+    },
+    {
+      "code": "UYANGALLA",
+      "id": 412,
+      "name": "UYANGALLA"
+    },
+    {
+      "code": "VCH",
+      "id": 286,
+      "name": "VALACHCHENEI"
+    },
+    {
+      "code": "VML",
+      "id": 288,
+      "name": "VANDARAMULLAI"
+    },
+    {
+      "code": "VNA",
+      "id": 289,
+      "name": "VAVUNIYA"
+    },
+    {
+      "code": "VGD",
+      "id": 287,
+      "name": "VEYANGODA"
+    },
+    {
+      "code": "WLP",
+      "id": 340,
+      "name": "VIRALMURIPPUWA"
+    },
+    {
+      "code": "WDA",
+      "id": 292,
+      "name": "WADDUWA"
+    },
+    {
+      "code": "WGG",
+      "id": 295,
+      "name": "WAGA"
+    },
+    {
+      "code": "WKL",
+      "id": 299,
+      "name": "WAIKKALA"
+    },
+    {
+      "code": "WHP",
+      "id": 296,
+      "name": "WALAHAPITIYA"
+    },
+    {
+      "code": "WALASWEWA",
+      "id": 407,
+      "name": "WALASWEWA"
+    },
+    {
+      "code": "WLG",
+      "id": 301,
+      "name": "WALGAMA"
+    },
+    {
+      "code": "WPA",
+      "id": 303,
+      "name": "WALPOLA"
+    },
+    {
+      "code": "WSL",
+      "id": 306,
+      "name": "WANAWASALA"
+    },
+    {
+      "code": "WRW",
+      "id": 305,
+      "name": "WANDURAWA"
+    },
+    {
+      "code": "WTG",
+      "id": 308,
+      "name": "WATAGODA"
+    },
+    {
+      "code": "WAP",
+      "id": 336,
+      "name": "WATARAKA"
+    },
+    {
+      "code": "WLA",
+      "id": 300,
+      "name": "WATAWALA"
+    },
+    {
+      "code": "WGA",
+      "id": 294,
+      "name": "WATTEGAMA"
+    },
+    {
+      "code": "Weligalla",
+      "id": 478,
+      "name": "Weligalla"
+    },
+    {
+      "code": "WLM",
+      "id": 302,
+      "name": "WELIGAMA"
+    },
+    {
+      "code": "WKD",
+      "id": 298,
+      "name": "WELIKANDA"
+    },
+    {
+      "code": "WEL",
+      "id": 293,
+      "name": "WELLAWA"
+    },
+    {
+      "code": "WTE",
+      "id": 307,
+      "name": "WELLAWATTA"
+    },
+    {
+      "code": "WERAGALA",
+      "id": 411,
+      "name": "WERAGALA"
+    },
+    {
+      "code": "WRD",
+      "id": 304,
+      "name": "WIJAYARAJADAHANA"
+    },
+    {
+      "code": "WWT",
+      "id": 309,
+      "name": "WILWATTE"
+    },
+    {
+      "code": "WKA",
+      "id": 297,
+      "name": "WLAKUBURA"
+    },
+    {
+      "code": "YGD",
+      "id": 473,
+      "name": "YAGODA"
+    },
+    {
+      "code": "YGD",
+      "id": 387,
+      "name": "YAGODA"
+    },
+    {
+      "code": "YPW",
+      "id": 315,
+      "name": "YAPAHUWA"
+    },
+    {
+      "code": "YGM",
+      "id": 313,
+      "name": "YATAGAMA"
+    },
+    {
+      "code": "YWR",
+      "id": 463,
+      "name": "YATAWARA"
+    },
+    {
+      "code": "YTR",
+      "id": 311,
+      "name": "YATIRAWANA"
+    },
+    {
+      "code": "YTG",
+      "id": 316,
+      "name": "YATTALGODA"
+    }
+  
+  ]
+}
