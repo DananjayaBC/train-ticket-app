@@ -1,1999 +1,2065 @@
-
-
 {
-    "stations":
-[
-
-    {
-      "code": "ABN",
-      "id": 3,
-      "name": "ABANPOLA"
-    },
-    {
-      "code": "ADAGALA",
-      "id": 410,
-      "name": "ADAGALA"
-    },
-    {
-      "code": "ANM",
-      "id": 11,
-      "name": "AHANGAMA"
-    },
-    {
-      "code": "AUH",
-      "id": 18,
-      "name": "AHUNGALLE"
-    },
-    {
-      "code": "APR",
-      "id": 13,
-      "name": "AKBOPURA"
-    },
-    {
-      "code": "AKU",
-      "id": 7,
-      "name": "AKURALA"
-    },
-    {
-      "code": "AWP",
-      "id": 22,
-      "name": "ALAWATUPITIYA"
-    },
-    {
-      "code": "ALW",
-      "id": 9,
-      "name": "ALAWWA"
-    },
-    {
-      "code": "ATB",
-      "id": 329,
-      "name": "ALUTH AMBALAMA"
-    },
-    {
-      "code": "ALT",
-      "id": 8,
-      "name": "ALUTHGAMA"
-    },
-    {
-      "code": "ABA",
-      "id": 1,
-      "name": "AMBALANGODA"
-    },
-    {
-      "code": "ABL",
-      "id": 2,
-      "name": "AMBEWELA"
-    },
-    {
-      "code": "APS",
-      "id": 14,
-      "name": "AMBEYPUSSA"
-    },
-    {
-      "code": "AVD",
-      "id": 19,
-      "name": "ANAWILUNDAWA"
-    },
-    {
-      "code": "AND",
-      "id": 10,
-      "name": "ANDADOLA"
-    },
-    {
-      "code": "AGT",
-      "id": 5,
-      "name": "ANGAMPITIYA"
-    },
-    {
-      "code": "AGL",
-      "id": 4,
-      "name": "ANGULANA"
-    },
-    {
-      "code": "ANP",
-      "id": 12,
-      "name": "ANURADHAPURA"
-    },
-    {
-      "code": "APT",
-      "id": 15,
-      "name": "ANURADHAPURA TOWN"
-    },
-    {
-      "code": "AKT",
-      "id": 6,
-      "name": "ARACHCHIKATTUWA"
-    },
-    {
-      "code": "ARP",
-      "id": 343,
-      "name": "ARAPATHGAMA"
-    },
-    {
-      "code": "ARW",
-      "id": 16,
-      "name": "ARUKKUWATTE"
-    },
-    {
-      "code": "ASL",
-      "id": 17,
-      "name": "ASELAPURA"
-    },
-    {
-      "code": "AGR",
-      "id": 467,
-      "name": "ASGIRIYA"
-    },
-    {
-      "code": "AWK",
-      "id": 21,
-      "name": "AUKANA"
-    },
-    {
-      "code": "AVS",
-      "id": 20,
-      "name": "AVISSAWELLA"
-    },
-    {
-      "code": "BAD",
-      "id": 23,
-      "name": "BADULLA"
-    },
-    {
-      "code": "BNA",
-      "id": 31,
-      "name": "BALANA"
-    },
-    {
-      "code": "BPA",
-      "id": 34,
-      "name": "BALAPITIYA"
-    },
-    {
-      "code": "BPT",
-      "id": 35,
-      "name": "BAMBALAPITIYA"
-    },
-    {
-      "code": "BDA",
-      "id": 25,
-      "name": "BANDARAWELA"
-    },
-    {
-      "code": "Bandirippuwa",
-      "id": 475,
-      "name": "Bandirippuwa"
-    },
-    {
-      "code": "BGY",
-      "id": 28,
-      "name": "BANGADENIYA"
-    },
-    {
-      "code": "BSL",
-      "id": 39,
-      "name": "BASELINE ROAD"
-    },
-    {
-      "code": "BOA",
-      "id": 33,
-      "name": "BATTALUOYA"
-    },
-    {
-      "code": "BCO",
-      "id": 24,
-      "name": "BATTICALOA"
-    },
-    {
-      "code": "BTU",
-      "id": 41,
-      "name": "BATUWATTE"
-    },
-    {
-      "code": "BEM",
-      "id": 26,
-      "name": "BEMMULLA"
-    },
-    {
-      "code": "BNT",
-      "id": 32,
-      "name": "BENTOTA"
-    },
-    {
-      "code": "BRL",
-      "id": 36,
-      "name": "BERUWALA"
-    },
-    {
-      "code": "BLT",
-      "id": 30,
-      "name": "BOLAWATTE"
-    },
-    {
-      "code": "BSH",
-      "id": 38,
-      "name": "BOOSSA"
-    },
-    {
-      "code": "BSA",
-      "id": 37,
-      "name": "BORELESSA"
-    },
-    {
-      "code": "BTL",
-      "id": 40,
-      "name": "BOTALE"
-    },
-    {
-      "code": "BGH",
-      "id": 27,
-      "name": "BULUGAHAGODA"
-    },
-    {
-      "code": "BJM",
-      "id": 29,
-      "name": "BUTHGAMUWA"
-    },
-    {
-      "code": "CCH",
-      "id": 398,
-      "name": "CHAVAKACHCHERI"
-    },
-    {
-      "code": "CDK",
-      "id": 371,
-      "name": "CHEDDIIKULAM"
-    },
-    {
-      "code": "CHL",
-      "id": 44,
-      "name": "CHILAW"
-    },
-    {
-      "code": "CBY",
-      "id": 43,
-      "name": "CHINA BEY"
-    },
-    {
-      "code": "CKM",
-      "id": 423,
-      "name": "CHUNNAKAM"
-    },
-    {
-      "code": "FOT",
-      "id": 61,
-      "name": "COLOMBO FORT"
-    },
-    {
-      "code": "CRD",
-      "id": 46,
-      "name": "COTTA ROAD"
-    },
-    {
-      "code": "DRL",
-      "id": 53,
-      "name": "DARALUWA"
-    },
-    {
-      "code": "DEC",
-      "id": 457,
-      "name": "DEC"
-    },
-    {
-      "code": "DWL",
-      "id": 54,
-      "name": "DEHIWALA"
-    },
-    {
-      "code": "DKD",
-      "id": 337,
-      "name": "Dekinda"
-    },
-    {
-      "code": "DAG",
-      "id": 47,
-      "name": "DEMATAGODA"
-    },
-    {
-      "code": "DDR",
-      "id": 48,
-      "name": "DEMODARA"
-    },
-    {
-      "code": "DPM",
-      "id": 52,
-      "name": "DEWAPURAM"
-    },
-    {
-      "code": "DEWEDDA",
-      "id": 417,
-      "name": "DEWEDDA"
-    },
-    {
-      "code": "DLA",
-      "id": 50,
-      "name": "DIYATALAWA"
-    },
-    {
-      "code": "DNA",
-      "id": 51,
-      "name": "DODANDUWA"
-    },
-    {
-      "code": "EYA",
-      "id": 60,
-      "name": "EGODA UYANA"
-    },
-    {
-      "code": "EPS",
-      "id": 395,
-      "name": "ELIPHANT PASS"
-    },
-    {
-      "code": "ELL",
-      "id": 57,
-      "name": "ELLE"
-    },
-    {
-      "code": "EML",
-      "id": 401,
-      "name": "ELUTHUMATTUVAL"
-    },
-    {
-      "code": "ELW",
-      "id": 341,
-      "name": "ELWALA"
-    },
-    {
-      "code": "EDM",
-      "id": 55,
-      "name": "ENDERAMULLA"
-    },
-    {
-      "code": "EKM",
-      "id": 56,
-      "name": "ERATTAPERIYAKULAM"
-    },
-    {
-      "code": "EVR",
-      "id": 59,
-      "name": "ERAVUR"
-    },
-    {
-      "code": "EPN",
-      "id": 58,
-      "name": "ERUKKALAM PENDU"
-    },
-    {
-      "code": "IPZ",
-      "id": 104,
-      "name": "FREE TRADE ZONE"
-    },
-    {
-      "code": "GBD",
-      "id": 64,
-      "name": "GALABODA"
-    },
-    {
-      "code": "GLM",
-      "id": 69,
-      "name": "GALGAMUWA"
-    },
-    {
-      "code": "GLE",
-      "id": 68,
-      "name": "GALLE"
-    },
-    {
-      "code": "GAL",
-      "id": 62,
-      "name": "GALLELLA"
-    },
-    {
-      "code": "GOA",
-      "id": 74,
-      "name": "GALOYA JUNCTION"
-    },
-    {
-      "code": "GMA",
-      "id": 70,
-      "name": "GAMMANA"
-    },
-    {
-      "code": "GPH",
-      "id": 75,
-      "name": "GAMPAHA"
-    },
-    {
-      "code": "GPL",
-      "id": 76,
-      "name": "GAMPOLA"
-    },
-    {
-      "code": "GND",
-      "id": 71,
-      "name": "GANEGODA"
-    },
-    {
-      "code": "GAN",
-      "id": 63,
-      "name": "GANEMULLA"
-    },
-    {
-      "code": "GNW",
-      "id": 73,
-      "name": "GANEWATTE"
-    },
-    {
-      "code": "Gangathilaka",
-      "id": 479,
-      "name": "Gangathilaka"
-    },
-    {
-      "code": "GDA",
-      "id": 65,
-      "name": "GANGODA"
-    },
-    {
-      "code": "GTL",
-      "id": 440,
-      "name": "GANTALAWA"
-    },
-    {
-      "code": "GEY",
-      "id": 66,
-      "name": "GELIOYA"
-    },
-    {
-      "code": "GNT",
-      "id": 72,
-      "name": "GINTHOTA"
-    },
-    {
-      "code": "GRB",
-      "id": 476,
-      "name": "GIRAMBE"
-    },
-    {
-      "code": "GRB",
-      "id": 77,
-      "name": "GIRAMBE"
-    },
-    {
-      "code": "GGA",
-      "id": 67,
-      "name": "GODAGAMA"
-    },
-    {
-      "code": "GWN",
-      "id": 79,
-      "name": "GREAT WESTERN"
-    },
-    {
-      "code": "HBD",
-      "id": 81,
-      "name": "HABARADUWA"
-    },
-    {
-      "code": "HBN",
-      "id": 82,
-      "name": "HABARANA"
-    },
-    {
-      "code": "HADIRIWALANA",
-      "id": 456,
-      "name": "Hadiriwalana"
-    },
-    {
-      "code": "HEA",
-      "id": 84,
-      "name": "HALIELA"
-    },
-    {
-      "code": "HPT",
-      "id": 92,
-      "name": "HAPUTALE"
-    },
-    {
-      "code": "HAU",
-      "id": 80,
-      "name": "HATAMUNA"
-    },
-    {
-      "code": "HKT",
-      "id": 87,
-      "name": "HATARAS KOTUWA"
-    },
-    {
-      "code": "HTN",
-      "id": 96,
-      "name": "HATTON"
-    },
-    {
-      "code": "HLO",
-      "id": 89,
-      "name": "HEEL OYA"
-    },
-    {
-      "code": "HDP",
-      "id": 83,
-      "name": "HEENDENIYA"
-    },
-    {
-      "code": "HML",
-      "id": 91,
-      "name": "HETTIMULLA"
-    },
-    {
-      "code": "HKD",
-      "id": 86,
-      "name": "HIKKADUWA"
-    },
-    {
-      "code": "HRG",
-      "id": 93,
-      "name": "HINGURAKGODA"
-    },
-    {
-      "code": "Hingurala",
-      "id": 444,
-      "name": "HINGURALA"
-    },
-    {
-      "code": "HRL",
-      "id": 94,
-      "name": "HIRIYALA"
-    },
-    {
-      "code": "HMA",
-      "id": 90,
-      "name": "HOMAGAMA"
-    },
-    {
-      "code": "HHR",
-      "id": 85,
-      "name": "HOMAGAMA HOSPITAL"
-    },
-    {
-      "code": "HRP",
-      "id": 95,
-      "name": "HORAPE"
-    },
-    {
-      "code": "HLA",
-      "id": 88,
-      "name": "HORIWIALA"
-    },
-    {
-      "code": "HUN",
-      "id": 97,
-      "name": "HUNUPITIYA"
-    },
-    {
-      "code": "HYP",
-      "id": 98,
-      "name": "HYINPORT"
-    },
-    {
-      "code": "IGH",
-      "id": 100,
-      "name": "IDALGASINNA"
-    },
-    {
-      "code": "IHA",
-      "id": 101,
-      "name": "IHALAGAMA"
-    },
-    {
-      "code": "IKT",
-      "id": 102,
-      "name": "IHALAKOTTE"
-    },
-    {
-      "code": "IWL",
-      "id": 105,
-      "name": "IHALAWATAWALA"
-    },
-    {
-      "code": "IDA",
-      "id": 99,
-      "name": "INDURUWA"
-    },
-    {
-      "code": "INO",
-      "id": 103,
-      "name": "INGURUOYA"
-    },
-    {
-      "code": "INL",
-      "id": 428,
-      "name": "INUVIL"
-    },
-    {
-      "code": "JLA",
-      "id": 107,
-      "name": "JA-ELA"
-    },
-    {
-      "code": "JFN",
-      "id": 400,
-      "name": "JAFFNA"
-    },
-    {
-      "code": "JAP",
-      "id": 106,
-      "name": "JAYANTHIPURA"
-    },
-    {
-      "code": "KCH",
-      "id": 338,
-      "name": "KACHCHERI HALL"
-    },
-    {
-      "code": "KDN",
-      "id": 114,
-      "name": "KADADASI NAGAR"
-    },
-    {
-      "code": "KMA",
-      "id": 128,
-      "name": "KADIGAMUWA"
-    },
-    {
-      "code": "KGW",
-      "id": 120,
-      "name": "KADUGANNAWA"
-    },
-    {
-      "code": "KDG",
-      "id": 113,
-      "name": "KADUGODA"
-    },
-    {
-      "code": "Kahatapitiya",
-      "id": 480,
-      "name": "Kahatapitiya"
-    },
-    {
-      "code": "KWE",
-      "id": 152,
-      "name": "KAHAWA"
-    },
-    {
-      "code": "KYA",
-      "id": 154,
-      "name": "KAKKAPALLIYA"
-    },
-    {
-      "code": "KLW",
-      "id": 127,
-      "name": "KALAWEWA"
-    },
-    {
-      "code": "KKH",
-      "id": 123,
-      "name": "KALKUDAH"
-    },
-    {
-      "code": "KTN",
-      "id": 147,
-      "name": "KALUTARA NORTH"
-    },
-    {
-      "code": "KTS",
-      "id": 148,
-      "name": "KALUTARA SOUTH"
-    },
-    {
-      "code": "KMG",
-      "id": 130,
-      "name": "KAMBURUGAMUWA"
-    },
-    {
-      "code": "KAN",
-      "id": 108,
-      "name": "KANDANA"
-    },
-    {
-      "code": "KGD",
-      "id": 119,
-      "name": "KANDEGODA"
-    },
-    {
-      "code": "KDT",
-      "id": 115,
-      "name": "KANDY"
-    },
-    {
-      "code": "KKS",
-      "id": 424,
-      "name": "KANKESANTHURAI"
-    },
-    {
-      "code": "KNI",
-      "id": 132,
-      "name": "KANTALE"
-    },
-    {
-      "code": "KAW",
-      "id": 110,
-      "name": "KAPUWATTE"
-    },
-    {
-      "code": "KPL",
-      "id": 139,
-      "name": "KARADIPUWAL"
-    },
-    {
-      "code": "KTL",
-      "id": 146,
-      "name": "KATHALUWA"
-    },
-    {
-      "code": "KAT",
-      "id": 109,
-      "name": "KATTUWA"
-    },
-    {
-      "code": "KTG",
-      "id": 144,
-      "name": "KATUGASTOTA"
-    },
-    {
-      "code": "KTG ROAD",
-      "id": 468,
-      "name": "KATUGASTOTA     ROAD"
-    },
-    {
-      "code": "KUG",
-      "id": 150,
-      "name": "KATUGODA"
-    },
-    {
-      "code": "KKD",
-      "id": 122,
-      "name": "KATUKURUNDA"
-    },
-    {
-      "code": "CAK",
-      "id": 42,
-      "name": "KATUNAYAKA AIRPORT"
-    },
-    {
-      "code": "KTK",
-      "id": 145,
-      "name": "KATUNAYAKE"
-    },
-    {
-      "code": "KEN",
-      "id": 117,
-      "name": "KEENAWALA"
-    },
-    {
-      "code": "KRA",
-      "id": 141,
-      "name": "KEKIRAWA"
-    },
-    {
-      "code": "KLA",
-      "id": 124,
-      "name": "KELANIYA"
-    },
-    {
-      "code": "KOC",
-      "id": 333,
-      "name": "KILINOCHCHI"
-    },
-    {
-      "code": "KNM",
-      "id": 133,
-      "name": "KINIGAMA"
-    },
-    {
-      "code": "KRW",
-      "id": 447,
-      "name": "KIRINDIWELA"
-    },
-    {
-      "code": "KPE",
-      "id": 138,
-      "name": "KIRULAPANA"
-    },
-    {
-      "code": "KEL",
-      "id": 116,
-      "name": "KITAL ELLE"
-    },
-    {
-      "code": "KCH",
-      "id": 111,
-      "name": "KOCHCHIKADE"
-    },
-    {
-      "code": "KKM",
-      "id": 397,
-      "name": "KODIKAMAM"
-    },
-    {
-      "code": "KOG",
-      "id": 134,
-      "name": "KOGGALA"
-    },
-    {
-      "code": "KOM",
-      "id": 474,
-      "name": "KOHOMBILIWALA"
-    },
-    {
-      "code": "KKV",
-      "id": 429,
-      "name": "KOKUVIL"
-    },
-    {
-      "code": "KLP",
-      "id": 126,
-      "name": "KOLLUPITIYA"
-    },
-    {
-      "code": "KLN",
-      "id": 453,
-      "name": "KOLONNAWA"
-    },
-    {
-      "code": "KLN",
-      "id": 125,
-      "name": "KOLONNAWA"
-    },
-    {
-      "code": "KPN",
-      "id": 140,
-      "name": "KOMPANNAVEDIYA"
-    },
-    {
-      "code": "KDV",
-      "id": 422,
-      "name": "KONDAVIL"
-    },
-    {
-      "code": "KON",
-      "id": 135,
-      "name": "KONWEWA"
-    },
-    {
-      "code": "KOR",
-      "id": 136,
-      "name": "KORALAWELLA"
-    },
-    {
-      "code": "KSG",
-      "id": 143,
-      "name": "KOSGAMA"
-    },
-    {
-      "code": "KDA",
-      "id": 112,
-      "name": "KOSGODA"
-    },
-    {
-      "code": "KHA",
-      "id": 121,
-      "name": "KOSHINNA"
-    },
-    {
-      "code": "KGA",
-      "id": 118,
-      "name": "KOTAGALA"
-    },
-    {
-      "code": "KOT",
-      "id": 137,
-      "name": "KOTTAWA"
-    },
-    {
-      "code": "KWW",
-      "id": 153,
-      "name": "KUDA WAWA"
-    },
-    {
-      "code": "KUD",
-      "id": 149,
-      "name": "KUDAHAKAPOLA"
-    },
-    {
-      "code": "KMK",
-      "id": 131,
-      "name": "KUMARAKANDA"
-    },
-    {
-      "code": "KMB",
-      "id": 129,
-      "name": "KUMBALGAMA"
-    },
-    {
-      "code": "Karahanhenagama",
-      "id": 408,
-      "name": "KURAHANHENAGAMA"
-    },
-    {
-      "code": "KUR",
-      "id": 151,
-      "name": "KURANA"
-    },
-    {
-      "code": "KRN",
-      "id": 142,
-      "name": "KURUNEGALA"
-    },
-    {
-      "code": "LYA",
-      "id": 158,
-      "name": "LAKSAUYANA"
-    },
-    {
-      "code": "LGM",
-      "id": 155,
-      "name": "LIYANAGEMULLA"
-    },
-    {
-      "code": "LIYANWALA",
-      "id": 334,
-      "name": "LIYANWALA"
-    },
-    {
-      "code": "LNA",
-      "id": 156,
-      "name": "LUNAWA"
-    },
-    {
-      "code": "LWL",
-      "id": 157,
-      "name": "LUNUWILA"
-    },
-    {
-      "code": "MPA",
-      "id": 181,
-      "name": "MADAMPAGAMA"
-    },
-    {
-      "code": "MDP",
-      "id": 161,
-      "name": "MADAMPE"
-    },
-    {
-      "code": "MRD",
-      "id": 372,
-      "name": "MADHU ROAD"
-    },
-    {
-      "code": "MKI",
-      "id": 174,
-      "name": "MADURANKULIYA"
-    },
-    {
-      "code": "MAGALEGODA",
-      "id": 472,
-      "name": "Magalegoda"
-    },
-    {
-      "code": "MGG",
-      "id": 393,
-      "name": "MAGALEGODA"
-    },
-    {
-      "code": "MGN",
-      "id": 167,
-      "name": "MAGGONA"
-    },
-    {
-      "code": "MGG",
-      "id": 452,
-      "name": "MAGULEGODA"
-    },
-    {
-      "code": "MYA",
-      "id": 190,
-      "name": "MAHAIYAWA"
-    },
-    {
-      "code": "MAG",
-      "id": 159,
-      "name": "MAHARAGAMA"
-    },
-    {
-      "code": "MHO",
-      "id": 170,
-      "name": "MAHO"
-    },
-    {
-      "code": "MPL",
-      "id": 182,
-      "name": "MALAPALLE"
-    },
-    {
-      "code": "MAL",
-      "id": 427,
-      "name": "MALLAKAM"
-    },
-    {
-      "code": "MPT",
-      "id": 183,
-      "name": "MANAMPITIYA"
-    },
-    {
-      "code": "MGE",
-      "id": 165,
-      "name": "MANGALAELIYA"
-    },
-    {
-      "code": "MKM",
-      "id": 331,
-      "name": "MANKULAM"
-    },
-    {
-      "code": "MAN",
-      "id": 434,
-      "name": "MANNAR"
-    },
-    {
-      "code": "MNG",
-      "id": 179,
-      "name": "MANUWANGAMA"
-    },
-    {
-      "code": "MDA",
-      "id": 160,
-      "name": "MARADANA"
-    },
-    {
-      "code": "MRK",
-      "id": 462,
-      "name": "MARAKONA"
-    },
-    {
-      "code": "MRL",
-      "id": 454,
-      "name": "MARALUWEWA"
-    },
-    {
-      "code": "MTL",
-      "id": 186,
-      "name": "MATALE"
-    },
-    {
-      "code": "MTR",
-      "id": 187,
-      "name": "MATARA"
-    },
-    {
-      "code": "MTM",
-      "id": 432,
-      "name": "MATHOTTAM"
-    },
-    {
-      "code": "MWD",
-      "id": 466,
-      "name": "MAVILMADA"
-    },
-    {
-      "code": "MVT",
-      "id": 425,
-      "name": "MAVITTAPURAM"
-    },
-    {
-      "code": "MEM",
-      "id": 163,
-      "name": "MEDAGAMA"
-    },
-    {
-      "code": "MWH",
-      "id": 189,
-      "name": "MEDAWACHCHIYA"
-    },
-    {
-      "code": "MEDDEGAMA",
-      "id": 421,
-      "name": "MEDDEGAMA"
-    },
-    {
-      "code": "MGN",
-      "id": 464,
-      "name": "MEEGAMMANA"
-    },
-    {
-      "code": "MGD",
-      "id": 164,
-      "name": "MEEGODA"
-    },
-    {
-      "code": "MES",
-      "id": 403,
-      "name": "MEESALAI"
-    },
-    {
-      "code": "MWA",
-      "id": 188,
-      "name": "MHA INDURUWA"
-    },
-    {
-      "code": "MED",
-      "id": 162,
-      "name": "MIDIGAMA"
-    },
-    {
-      "code": "MHN",
-      "id": 169,
-      "name": "MIHINTALE"
-    },
-    {
-      "code": "MHJ",
-      "id": 168,
-      "name": "MIHINTALE JUNCTION"
-    },
-    {
-      "code": "MIY",
-      "id": 173,
-      "name": "MINNERIYA"
-    },
-    {
-      "code": "MIR",
-      "id": 171,
-      "name": "MIRIGAMA"
-    },
-    {
-      "code": "MIRIHANPITIGAMA",
-      "id": 409,
-      "name": "MIRIHANPITIGAMA"
-    },
-    {
-      "code": "MIS",
-      "id": 172,
-      "name": "MIRISSA"
-    },
-    {
-      "code": "Miriswatte",
-      "id": 443,
-      "name": "MIRISWATTA"
-    },
-    {
-      "code": "MSL",
-      "id": 402,
-      "name": "MIRUSUVIL"
-    },
-    {
-      "code": "MLP",
-      "id": 177,
-      "name": "MOLLIPATANA"
-    },
-    {
-      "code": "MLG",
-      "id": 176,
-      "name": "MORAGOLLAGAMA"
-    },
-    {
-      "code": "MKP",
-      "id": 175,
-      "name": "MORAKELE"
-    },
-    {
-      "code": "MRT",
-      "id": 184,
-      "name": "MORATUWA"
-    },
-    {
-      "code": "MLV",
-      "id": 439,
-      "name": "MOUNT LAVINIA"
-    },
-    {
-      "code": "MNL",
-      "id": 180,
-      "name": "MUNDAL"
-    },
-    {
-      "code": "MRK",
-      "id": 332,
-      "name": "MURIKANDY"
-    },
-    {
-      "code": "MUK",
-      "id": 431,
-      "name": "MURUNKAN"
-    },
-    {
-      "code": "MTG",
-      "id": 185,
-      "name": "MUTHTHETTUGALA"
-    },
-    {
-      "code": "NAG",
-      "id": 191,
-      "name": "NAGOLLAGAMA"
-    },
-    {
-      "code": "NLY",
-      "id": 196,
-      "name": "NAILIYA"
-    },
-    {
-      "code": "NOA",
-      "id": 197,
-      "name": "NANUOYA"
-    },
-    {
-      "code": "NHP",
-      "id": 195,
-      "name": "NARAHENPITA"
-    },
-    {
-      "code": "NAT",
-      "id": 192,
-      "name": "NATTANDIYA"
-    },
-    {
-      "code": "NVT",
-      "id": 399,
-      "name": "NAVATKULI"
-    },
-    {
-      "code": "NVP",
-      "id": 201,
-      "name": "NAWALAPITIYA"
-    },
-    {
-      "code": "NWN",
-      "id": 202,
-      "name": "NAWINNA"
-    },
-    {
-      "code": "NGM",
-      "id": 194,
-      "name": "NEGAMA"
-    },
-    {
-      "code": "NGB",
-      "id": 193,
-      "name": "NEGOMBO"
-    },
-    {
-      "code": "NELUMPATHGAMA",
-      "id": 415,
-      "name": "NELUMPATHGAMA"
-    },
-    {
-      "code": "NPK",
-      "id": 199,
-      "name": "NELUMPOKUNA"
-    },
-    {
-      "code": "NYK",
-      "id": 370,
-      "name": "NERIYAKULAM"
-    },
-    {
-      "code": "NOR",
-      "id": 198,
-      "name": "NOORANAGAR"
-    },
-    {
-      "code": "NUG",
-      "id": 200,
-      "name": "NUGEGODA"
-    },
-    {
-      "code": "OHA",
-      "id": 203,
-      "name": "OHIYA"
-    },
-    {
-      "code": "OMT",
-      "id": 204,
-      "name": "OMANTHAI"
-    },
-    {
-      "code": "PDK",
-      "id": 208,
-      "name": "PADUKKA"
-    },
-    {
-      "code": "PAHALAWARDHANA",
-      "id": 420,
-      "name": "PAHALAWARDHANA"
-    },
-    {
-      "code": "PVI",
-      "id": 238,
-      "name": "PALAVI"
-    },
-    {
-      "code": "PAL",
-      "id": 396,
-      "name": "PALLAI"
-    },
-    {
-      "code": "PALLE TALAWINNA",
-      "id": 465,
-      "name": "PALLE TALAVINNA"
-    },
-    {
-      "code": "PLL",
-      "id": 219,
-      "name": "PALLEWALA"
-    },
-    {
-      "code": "PUW",
-      "id": 237,
-      "name": "PALUGASWEWA"
-    },
-    {
-      "code": "PND",
-      "id": 223,
-      "name": "PANADURA"
-    },
-    {
-      "code": "PNG",
-      "id": 224,
-      "name": "PANAGODA"
-    },
-    {
-      "code": "PNL",
-      "id": 226,
-      "name": "PANALEEYA"
-    },
-    {
-      "code": "PRW",
-      "id": 233,
-      "name": "PANGIRIWATTA"
-    },
-    {
-      "code": "PAN",
-      "id": 205,
-      "name": "PANNIPITIYA"
-    },
-    {
-      "code": "PKU",
-      "id": 216,
-      "name": "PARAKUMPURA"
-    },
-    {
-      "code": "PRN",
-      "id": 394,
-      "name": "PARANTHAN"
-    },
-    {
-      "code": "PHW",
-      "id": 213,
-      "name": "PARASANGAHAWEWA"
-    },
-    {
-      "code": "PGD",
-      "id": 209,
-      "name": "PATAGAMGODA"
-    },
-    {
-      "code": "PTP",
-      "id": 236,
-      "name": "PATHANPHA"
-    },
-    {
-      "code": "PPL",
-      "id": 230,
-      "name": "PATTIPOLA"
-    },
-    {
-      "code": "PGN",
-      "id": 211,
-      "name": "PAYAGALA NORTH"
-    },
-    {
-      "code": "PGS",
-      "id": 212,
-      "name": "PAYAGALA SOUTH"
-    },
-    {
-      "code": "PRP",
-      "id": 232,
-      "name": "PEMROSE"
-    },
-    {
-      "code": "PDA",
-      "id": 207,
-      "name": "PERADENIYA"
-    },
-    {
-      "code": "PKP",
-      "id": 459,
-      "name": "PERAKUMPURA"
-    },
-    {
-      "code": "PRL",
-      "id": 231,
-      "name": "PERALANDA"
-    },
-    {
-      "code": "PNV",
-      "id": 227,
-      "name": "PERIYANAGAVILLU"
-    },
-    {
-      "code": "PES",
-      "id": 436,
-      "name": "PESALAI"
-    },
-    {
-      "code": "PLD",
-      "id": 217,
-      "name": "PILIDUWA"
-    },
-    {
-      "code": "PLT",
-      "id": 222,
-      "name": "PILIMATALAWA"
-    },
-    {
-      "code": "PINNAGOLLA",
-      "id": 416,
-      "name": "PINNAGOLLA"
-    },
-    {
-      "code": "PNW",
-      "id": 228,
-      "name": "PINNAWALA"
-    },
-    {
-      "code": "PIN",
-      "id": 214,
-      "name": "PINWATTE"
-    },
-    {
-      "code": "PGM",
-      "id": 210,
-      "name": "PIYADIGAMA"
-    },
-    {
-      "code": "PYA",
-      "id": 240,
-      "name": "PIYAGAMA"
-    },
-    {
-      "code": "Polgaha Anga",
-      "id": 477,
-      "name": "Polgaha Anga"
-    },
-    {
-      "code": "PLG",
-      "id": 218,
-      "name": "POLGAHAWELA"
-    },
-    {
-      "code": "PLN",
-      "id": 220,
-      "name": "POLONNARUWA"
-    },
-    {
-      "code": "PLR",
-      "id": 221,
-      "name": "POLWATHUMODARA"
-    },
-    {
-      "code": "PON",
-      "id": 229,
-      "name": "POONEWA"
-    },
-    {
-      "code": "PORAPOLA",
-      "id": 419,
-      "name": "PORAPOLA"
-    },
-    {
-      "code": "PORAPOLA JUNC.",
-      "id": 418,
-      "name": "PORAPOLA JUNC."
-    },
-    {
-      "code": "PTA",
-      "id": 234,
-      "name": "POTUHERA"
-    },
-    {
-      "code": "PCK",
-      "id": 206,
-      "name": "PULACHCHIKULAM"
-    },
-    {
-      "code": "PKM",
-      "id": 330,
-      "name": "PULIYANKULAM"
-    },
-    {
-      "code": "PNI",
-      "id": 225,
-      "name": "PUNANI"
-    },
-    {
-      "code": "PNK",
-      "id": 406,
-      "name": "PUNKANKULAM"
-    },
-    {
-      "code": "PTM",
-      "id": 235,
-      "name": "PUTTALAM"
-    },
-    {
-      "code": "PWP",
-      "id": 445,
-      "name": "PUWAKPITIYA"
-    },
-    {
-      "code": "PWP Town",
-      "id": 446,
-      "name": "PUWAKPITIYA TOWN"
-    },
-    {
-      "code": "RDL",
-      "id": 243,
-      "name": "RADELLA"
-    },
-    {
-      "code": "RGM",
-      "id": 246,
-      "name": "RAGAMA"
-    },
-    {
-      "code": "RBK",
-      "id": 241,
-      "name": "RAMBUKKANA"
-    },
-    {
-      "code": "RMA",
-      "id": 247,
-      "name": "RANAMUGGAMUWA"
-    },
-    {
-      "code": "RGA",
-      "id": 245,
-      "name": "RANDENIGAMA"
-    },
-    {
-      "code": "RTG",
-      "id": 249,
-      "name": "RATHGAMA"
-    },
-    {
-      "code": "RML",
-      "id": 248,
-      "name": "RATMALANA"
-    },
-    {
-      "code": "RDL",
-      "id": 244,
-      "name": "REDEETHENNA"
-    },
-    {
-      "code": "RCH",
-      "id": 242,
-      "name": "RICHMOND HILL"
-    },
-    {
-      "code": "RZL",
-      "id": 250,
-      "name": "ROSELLA"
-    },
-    {
-      "code": "SAL",
-      "id": 251,
-      "name": "SALIYAPURA"
-    },
-    {
-      "code": "SAK",
-      "id": 404,
-      "name": "SANKATHANAI"
-    },
-    {
-      "code": "SUA",
-      "id": 257,
-      "name": "SARASAVIUYANA"
-    },
-    {
-      "code": "SWR",
-      "id": 259,
-      "name": "SAWARANA"
-    },
-    {
-      "code": "SCR",
-      "id": 252,
-      "name": "SECRETARTAT HALT"
-    },
-    {
-      "code": "SED",
-      "id": 253,
-      "name": "SEEDUWA"
-    },
-    {
-      "code": "SMA",
-      "id": 255,
-      "name": "SEENIGAMA"
-    },
-    {
-      "code": "SGM",
-      "id": 254,
-      "name": "SENARATHGAMA"
-    },
-    {
-      "code": "SVP",
-      "id": 258,
-      "name": "SEVANAPITIYA"
-    },
-    {
-      "code": "SLM",
-      "id": 339,
-      "name": "SIYABALANGAMUWA"
-    },
-    {
-      "code": "SYA",
-      "id": 260,
-      "name": "SIYALANGAMUWA"
-    },
-    {
-      "code": "SRP",
-      "id": 256,
-      "name": "SRAWASTHIPURA"
-    },
-    {
-      "code": "TLM",
-      "id": 437,
-      "name": "TALAIMANNAR"
-    },
-    {
-      "code": "TMP",
-      "id": 438,
-      "name": "TALAIMANNAR PIER"
-    },
-    {
-      "code": "TLA",
-      "id": 270,
-      "name": "TALAWA"
-    },
-    {
-      "code": "TKL",
-      "id": 269,
-      "name": "TALAWAKELE"
-    },
-    {
-      "code": "TWG",
-      "id": 276,
-      "name": "TALAWATTEGEDARA"
-    },
-    {
-      "code": "TWO",
-      "id": 461,
-      "name": "TAWALANOYA"
-    },
-    {
-      "code": "TPI",
-      "id": 426,
-      "name": "TELLIPALLAI"
-    },
-    {
-      "code": "TWT",
-      "id": 277,
-      "name": "TELWATTE"
-    },
-    {
-      "code": "TBL",
-      "id": 262,
-      "name": "TEMBLIGALA"
-    },
-    {
-      "code": "TPH",
-      "id": 405,
-      "name": "THACHANTHOPPU"
-    },
-    {
-      "code": "TLP",
-      "id": 271,
-      "name": "THALPE"
-    },
-    {
-      "code": "THAMBAGALLA",
-      "id": 414,
-      "name": "THAMBAGALLA"
-    },
-    {
-      "code": "TBM",
-      "id": 263,
-      "name": "THAMBUTTEGAMA"
-    },
-    {
-      "code": "TAN",
-      "id": 450,
-      "name": "THAMPALAKAMAM"
-    },
-    {
-      "code": "TDK",
-      "id": 265,
-      "name": "THANDIKULAM"
-    },
-    {
-      "code": "TVM",
-      "id": 433,
-      "name": "THIIRUKETHEESWARAM"
-    },
-    {
-      "code": "TDY",
-      "id": 267,
-      "name": "THILLADIYA"
-    },
-    {
-      "code": "TNA",
-      "id": 272,
-      "name": "THIRANAGAMA"
-    },
-    {
-      "code": "TVD",
-      "id": 435,
-      "name": "THODDAVELI"
-    },
-    {
-      "code": "THURULIYAGAMA",
-      "id": 455,
-      "name": "Thuruliyagama"
-    },
-    {
-      "code": "TIM",
-      "id": 268,
-      "name": "TIMBIRIYAGEDARA"
-    },
-    {
-      "code": "TSM",
-      "id": 274,
-      "name": "TISMALPOLA"
-    },
-    {
-      "code": "TRH",
-      "id": 273,
-      "name": "TRAIN HALT 01"
-    },
-    {
-      "code": "TCO",
-      "id": 264,
-      "name": "TRINCOMALEE"
-    },
-    {
-      "code": "TUD",
-      "id": 275,
-      "name": "TUDELLA"
-    },
-    {
-      "code": "TDR",
-      "id": 266,
-      "name": "TUMMODARA"
-    },
-    {
-      "code": "UDL",
-      "id": 278,
-      "name": "UDATALAWINNA"
-    },
-    {
-      "code": "UWL",
-      "id": 285,
-      "name": "UDATHTHAWALA"
-    },
-    {
-      "code": "UHM",
-      "id": 281,
-      "name": "UDHAMULLA"
-    },
-    {
-      "code": "UDUGODAGAMA",
-      "id": 413,
-      "name": "UDUGODAGAMA"
-    },
-    {
-      "code": "UDW",
-      "id": 279,
-      "name": "UDUWARA"
-    },
-    {
-      "code": "UGL",
-      "id": 280,
-      "name": "UGGALLA"
-    },
-    {
-      "code": "UKL",
-      "id": 282,
-      "name": "UKUWELA"
-    },
-    {
-      "code": "ULP",
-      "id": 283,
-      "name": "ULAPANE"
-    },
-    {
-      "code": "UNW",
-      "id": 284,
-      "name": "UNAWATUNA"
-    },
-    {
-      "code": "URW",
-      "id": 451,
-      "name": "Urugodawattha"
-    },
-    {
-      "code": "UYANGALLA",
-      "id": 412,
-      "name": "UYANGALLA"
-    },
-    {
-      "code": "VCH",
-      "id": 286,
-      "name": "VALACHCHENEI"
-    },
-    {
-      "code": "VML",
-      "id": 288,
-      "name": "VANDARAMULLAI"
-    },
-    {
-      "code": "VNA",
-      "id": 289,
-      "name": "VAVUNIYA"
-    },
-    {
-      "code": "VGD",
-      "id": 287,
-      "name": "VEYANGODA"
-    },
-    {
-      "code": "WLP",
-      "id": 340,
-      "name": "VIRALMURIPPUWA"
-    },
-    {
-      "code": "WDA",
-      "id": 292,
-      "name": "WADDUWA"
-    },
-    {
-      "code": "WGG",
-      "id": 295,
-      "name": "WAGA"
-    },
-    {
-      "code": "WKL",
-      "id": 299,
-      "name": "WAIKKALA"
-    },
-    {
-      "code": "WHP",
-      "id": 296,
-      "name": "WALAHAPITIYA"
-    },
-    {
-      "code": "WALASWEWA",
-      "id": 407,
-      "name": "WALASWEWA"
-    },
-    {
-      "code": "WLG",
-      "id": 301,
-      "name": "WALGAMA"
-    },
-    {
-      "code": "WPA",
-      "id": 303,
-      "name": "WALPOLA"
-    },
-    {
-      "code": "WSL",
-      "id": 306,
-      "name": "WANAWASALA"
-    },
-    {
-      "code": "WRW",
-      "id": 305,
-      "name": "WANDURAWA"
-    },
-    {
-      "code": "WTG",
-      "id": 308,
-      "name": "WATAGODA"
-    },
-    {
-      "code": "WAP",
-      "id": 336,
-      "name": "WATARAKA"
-    },
-    {
-      "code": "WLA",
-      "id": 300,
-      "name": "WATAWALA"
-    },
-    {
-      "code": "WGA",
-      "id": 294,
-      "name": "WATTEGAMA"
-    },
-    {
-      "code": "Weligalla",
-      "id": 478,
-      "name": "Weligalla"
-    },
-    {
-      "code": "WLM",
-      "id": 302,
-      "name": "WELIGAMA"
-    },
-    {
-      "code": "WKD",
-      "id": 298,
-      "name": "WELIKANDA"
-    },
-    {
-      "code": "WEL",
-      "id": 293,
-      "name": "WELLAWA"
-    },
-    {
-      "code": "WTE",
-      "id": 307,
-      "name": "WELLAWATTA"
-    },
-    {
-      "code": "WERAGALA",
-      "id": 411,
-      "name": "WERAGALA"
-    },
-    {
-      "code": "WRD",
-      "id": 304,
-      "name": "WIJAYARAJADAHANA"
-    },
-    {
-      "code": "WWT",
-      "id": 309,
-      "name": "WILWATTE"
-    },
-    {
-      "code": "WKA",
-      "id": 297,
-      "name": "WLAKUBURA"
-    },
-    {
-      "code": "YGD",
-      "id": 473,
-      "name": "YAGODA"
-    },
-    {
-      "code": "YGD",
-      "id": 387,
-      "name": "YAGODA"
-    },
-    {
-      "code": "YPW",
-      "id": 315,
-      "name": "YAPAHUWA"
-    },
-    {
-      "code": "YGM",
-      "id": 313,
-      "name": "YATAGAMA"
-    },
-    {
-      "code": "YWR",
-      "id": 463,
-      "name": "YATAWARA"
-    },
-    {
-      "code": "YTR",
-      "id": 311,
-      "name": "YATIRAWANA"
-    },
-    {
-      "code": "YTG",
-      "id": 316,
-      "name": "YATTALGODA"
-    }
-  
-  ]
+  "RESULTS": {
+    "stationList": [
+      {
+        "stationCode": "AVN",
+        "stationName": "Arivial Nagar",
+        "stationID": 483
+      },
+      {
+        "stationCode": "Bandirippuwa",
+        "stationName": "Bandirippuwa",
+        "stationID": 475
+      },
+      {
+        "stationCode": "DEC",
+        "stationName": "DEC",
+        "stationID": 457
+      },
+      {
+        "stationCode": "Gangathilaka",
+        "stationName": "Gangathilaka",
+        "stationID": 479
+      },
+      {
+        "stationCode": "GRB",
+        "stationName": "GIRAMBE",
+        "stationID": 481
+      },
+      {
+        "stationCode": "Kahatapitiya",
+        "stationName": "Kahatapitiya",
+        "stationID": 480
+      },
+      {
+        "stationCode": "KRW",
+        "stationName": "Kiridiwela",
+        "stationID": 447
+      },
+      {
+        "stationCode": "KLN",
+        "stationName": "KOLONNAWA",
+        "stationID": 453
+      },
+      {
+        "stationCode": "MGG",
+        "stationName": "MAGULEGODA",
+        "stationID": 452
+      },
+      {
+        "stationCode": "MKB",
+        "stationName": "MAKUMBURA",
+        "stationID": 182
+      },
+      {
+        "stationCode": "Polgaha Anga",
+        "stationName": "Polgaha Anga",
+        "stationID": 477
+      },
+      {
+        "stationCode": "TWO",
+        "stationName": "Tawalankoya",
+        "stationID": 461
+      },
+      {
+        "stationCode": "Weligalla",
+        "stationName": "Weligalla",
+        "stationID": 478
+      },
+      {
+        "stationCode": "AGT",
+        "stationName": "අංගම්පිටිය",
+        "stationID": 5
+      },
+      {
+        "stationCode": "APR",
+        "stationName": "අක්බෝපුර",
+        "stationID": 13
+      },
+      {
+        "stationCode": "AKU",
+        "stationName": "අකුරල",
+        "stationID": 7
+      },
+      {
+        "stationCode": "AGL",
+        "stationName": "අඟුලාන",
+        "stationID": 4
+      },
+      {
+        "stationCode": "ANP",
+        "stationName": "අනුරාධපුර",
+        "stationID": 12
+      },
+      {
+        "stationCode": "APT",
+        "stationName": "අනුරාධපුර නගරය",
+        "stationID": 15
+      },
+      {
+        "stationCode": "AND",
+        "stationName": "අඳදොල",
+        "stationID": 10
+      },
+      {
+        "stationCode": "ABN",
+        "stationName": "අබන්පොල",
+        "stationID": 3
+      },
+      {
+        "stationCode": "ABA",
+        "stationName": "අම්බලන්ගොඩ",
+        "stationID": 1
+      },
+      {
+        "stationCode": "APS",
+        "stationName": "අඹේපුස්ස",
+        "stationID": 14
+      },
+      {
+        "stationCode": "ABL",
+        "stationName": "අඹේවෙල",
+        "stationID": 2
+      },
+      {
+        "stationCode": "ARP",
+        "stationName": "අරපත්ගම",
+        "stationID": 343
+      },
+      {
+        "stationCode": "AWP",
+        "stationName": "අලවතුපිටිය",
+        "stationID": 22
+      },
+      {
+        "stationCode": "ALW",
+        "stationName": "අලව්ව",
+        "stationID": 9
+      },
+      {
+        "stationCode": "EPS",
+        "stationName": "අලිමංකඩ",
+        "stationID": 395
+      },
+      {
+        "stationCode": "ATB",
+        "stationName": "අලුත් අම්බලම",
+        "stationID": 329
+      },
+      {
+        "stationCode": "ALT",
+        "stationName": "අලුත්ගම",
+        "stationID": 8
+      },
+      {
+        "stationCode": "AVS",
+        "stationName": "අවිස්සාවේල්ල",
+        "stationID": 20
+      },
+      {
+        "stationCode": "AWK",
+        "stationName": "අවුකන",
+        "stationID": 21
+      },
+      {
+        "stationCode": "AGR",
+        "stationName": "අස්ගිරිය",
+        "stationID": 467
+      },
+      {
+        "stationCode": "ANM",
+        "stationName": "අහංගම",
+        "stationID": 11
+      },
+      {
+        "stationCode": "AUH",
+        "stationName": "අහුංගල්ල",
+        "stationID": 18
+      },
+      {
+        "stationCode": "ADAGALA",
+        "stationName": "අැදගල",
+        "stationID": 410
+      },
+      {
+        "stationCode": "AVD",
+        "stationName": "ආනවිලුන්ඩාව",
+        "stationID": 19
+      },
+      {
+        "stationCode": "AKT",
+        "stationName": "ආරච්චිකට්ටුව",
+        "stationID": 6
+      },
+      {
+        "stationCode": "ARW",
+        "stationName": "ආරුක්කුවත්ත",
+        "stationID": 16
+      },
+      {
+        "stationCode": "ELL",
+        "stationName": "ඇල්ල",
+        "stationID": 57
+      },
+      {
+        "stationCode": "ELW",
+        "stationName": "ඇල්වල",
+        "stationID": 341
+      },
+      {
+        "stationCode": "ASL",
+        "stationName": "ඇසලපුර",
+        "stationID": 17
+      },
+      {
+        "stationCode": "INO",
+        "stationName": "ඉඟුරුඔය",
+        "stationID": 103
+      },
+      {
+        "stationCode": "IGH",
+        "stationName": "ඉදල්ගස්ඉන්න",
+        "stationID": 100
+      },
+      {
+        "stationCode": "INL",
+        "stationName": "ඉනුවිල්",
+        "stationID": 428
+      },
+      {
+        "stationCode": "IDA",
+        "stationName": "ඉඳුරූව",
+        "stationID": 99
+      },
+      {
+        "stationCode": "IKT",
+        "stationName": "ඉහලකොට්ටෙ",
+        "stationID": 102
+      },
+      {
+        "stationCode": "IHA",
+        "stationName": "ඉහලගම",
+        "stationID": 101
+      },
+      {
+        "stationCode": "IWL",
+        "stationName": "ඉහළවටවල",
+        "stationID": 105
+      },
+      {
+        "stationCode": "UKL",
+        "stationName": "උකුවෙල",
+        "stationID": 282
+      },
+      {
+        "stationCode": "UGL",
+        "stationName": "උග්ගල්ල",
+        "stationID": 280
+      },
+      {
+        "stationCode": "UDL",
+        "stationName": "උඩතලවින්න",
+        "stationID": 278
+      },
+      {
+        "stationCode": "UWL",
+        "stationName": "උඩත්තවල",
+        "stationID": 285
+      },
+      {
+        "stationCode": "UHM",
+        "stationName": "උඩහමුල්ල",
+        "stationID": 281
+      },
+      {
+        "stationCode": "UDUGODAGAMA",
+        "stationName": "උඩුගොඩගම",
+        "stationID": 413
+      },
+      {
+        "stationCode": "UDW",
+        "stationName": "උඩුවර",
+        "stationID": 279
+      },
+      {
+        "stationCode": "UNW",
+        "stationName": "උණවටුන",
+        "stationID": 284
+      },
+      {
+        "stationCode": "UYANGALLA",
+        "stationName": "උයන්ගල්ල",
+        "stationID": 412
+      },
+      {
+        "stationCode": "ULP",
+        "stationName": "උලපනේ",
+        "stationID": 283
+      },
+      {
+        "stationCode": "EYA",
+        "stationName": "එගොඩඋයන",
+        "stationID": 60
+      },
+      {
+        "stationCode": "EDM",
+        "stationName": "එඬේරමුල්ල",
+        "stationID": 55
+      },
+      {
+        "stationCode": "EKM",
+        "stationName": "එරත්තපෙරියකුලම්",
+        "stationID": 56
+      },
+      {
+        "stationCode": "EVR",
+        "stationName": "එරාවුර්",
+        "stationID": 59
+      },
+      {
+        "stationCode": "EPN",
+        "stationName": "එරෙක්කුලම් පෙන්ඩු",
+        "stationID": 58
+      },
+      {
+        "stationCode": "EML",
+        "stationName": "එළුතුමට්ටුවාල්",
+        "stationID": 401
+      },
+      {
+        "stationCode": "URW",
+        "stationName": "ඔරුගොඩවත්ත",
+        "stationID": 451
+      },
+      {
+        "stationCode": "OHA",
+        "stationName": "ඔහිය",
+        "stationID": 203
+      },
+      {
+        "stationCode": "OMT",
+        "stationName": "ඕමන්තෙයි",
+        "stationID": 204
+      },
+      {
+        "stationCode": "KCH",
+        "stationName": "කච්චේරි හෝල්ට්",
+        "stationID": 338
+      },
+      {
+        "stationCode": "KAT",
+        "stationName": "කට්ටුව",
+        "stationID": 109
+      },
+      {
+        "stationCode": "KKD",
+        "stationName": "කටුකුරුන්ද",
+        "stationID": 122
+      },
+      {
+        "stationCode": "KTG",
+        "stationName": "කටුගස්තොට",
+        "stationID": 144
+      },
+      {
+        "stationCode": "KTG ROAD",
+        "stationName": "කටුගස්තොට පාර",
+        "stationID": 468
+      },
+      {
+        "stationCode": "KUG",
+        "stationName": "කටුගොඩ",
+        "stationID": 150
+      },
+      {
+        "stationCode": "KTK",
+        "stationName": "කටුනායක",
+        "stationID": 145
+      },
+      {
+        "stationCode": "CAK",
+        "stationName": "කටුනායක ගුවන් තොටුපොල",
+        "stationID": 42
+      },
+      {
+        "stationCode": "KDN",
+        "stationName": "කඩදාසි නගර්",
+        "stationID": 114
+      },
+      {
+        "stationCode": "KMA",
+        "stationName": "කඩිගමුව",
+        "stationID": 128
+      },
+      {
+        "stationCode": "KGW",
+        "stationName": "කඩුගන්නාව",
+        "stationID": 120
+      },
+      {
+        "stationCode": "KDG",
+        "stationName": "කඩුගොඩ",
+        "stationID": 113
+      },
+      {
+        "stationCode": "KTL",
+        "stationName": "කතළුව",
+        "stationID": 146
+      },
+      {
+        "stationCode": "KKS",
+        "stationName": "කන්කසන්තුරේ",
+        "stationID": 424
+      },
+      {
+        "stationCode": "KNI",
+        "stationName": "කන්තලේ",
+        "stationID": 132
+      },
+      {
+        "stationCode": "KGD",
+        "stationName": "කන්දෙගොඩ",
+        "stationID": 119
+      },
+      {
+        "stationCode": "KAN",
+        "stationName": "කඳාන",
+        "stationID": 108
+      },
+      {
+        "stationCode": "KAW",
+        "stationName": "කපුවත්ත",
+        "stationID": 110
+      },
+      {
+        "stationCode": "KMG",
+        "stationName": "කඹුරුගමුව",
+        "stationID": 130
+      },
+      {
+        "stationCode": "KKH",
+        "stationName": "කල්කුඩා",
+        "stationID": 123
+      },
+      {
+        "stationCode": "KLW",
+        "stationName": "කලා වැව",
+        "stationID": 127
+      },
+      {
+        "stationCode": "KWE",
+        "stationName": "කහව",
+        "stationID": 152
+      },
+      {
+        "stationCode": "KTN",
+        "stationName": "කළුතර උතුර",
+        "stationID": 147
+      },
+      {
+        "stationCode": "KTS",
+        "stationName": "කළුතර දකුණ",
+        "stationID": 148
+      },
+      {
+        "stationCode": "KYA",
+        "stationName": "කාක්කපල්ලිය",
+        "stationID": 154
+      },
+      {
+        "stationCode": "KPL",
+        "stationName": "කාරදිපුවාල්",
+        "stationID": 139
+      },
+      {
+        "stationCode": "KRA",
+        "stationName": "කැකිරාව",
+        "stationID": 141
+      },
+      {
+        "stationCode": "KEK",
+        "stationName": "කැකුණදුර",
+        "stationID": 487
+      },
+      {
+        "stationCode": "KLA",
+        "stationName": "කැළණිය",
+        "stationID": 124
+      },
+      {
+        "stationCode": "KEL",
+        "stationName": "කිතල් ඇල්ල",
+        "stationID": 116
+      },
+      {
+        "stationCode": "KNM",
+        "stationName": "කිනිගම",
+        "stationID": 133
+      },
+      {
+        "stationCode": "KPE",
+        "stationName": "කිරුලපන",
+        "stationID": 138
+      },
+      {
+        "stationCode": "KOC",
+        "stationName": "කිලිනොච්චිය",
+        "stationID": 333
+      },
+      {
+        "stationCode": "KEN",
+        "stationName": "කීනවල",
+        "stationID": 117
+      },
+      {
+        "stationCode": "KUD",
+        "stationName": "කුඩහකපොල",
+        "stationID": 149
+      },
+      {
+        "stationCode": "KWW",
+        "stationName": "කුඩා වැව",
+        "stationID": 153
+      },
+      {
+        "stationCode": "KMK",
+        "stationName": "කුමාරකන්ද",
+        "stationID": 131
+      },
+      {
+        "stationCode": "KMB",
+        "stationName": "කුඹල්ගම",
+        "stationID": 129
+      },
+      {
+        "stationCode": "KUR",
+        "stationName": "කුරන",
+        "stationID": 151
+      },
+      {
+        "stationCode": "Karahanhenagama",
+        "stationName": "කුරහන්හේනගම",
+        "stationID": 408
+      },
+      {
+        "stationCode": "KRN",
+        "stationName": "කුරුණෑගල",
+        "stationID": 142
+      },
+      {
+        "stationCode": "KKV",
+        "stationName": "කොකුවිල්",
+        "stationID": 429
+      },
+      {
+        "stationCode": "KOG",
+        "stationName": "කොග්ගල",
+        "stationID": 134
+      },
+      {
+        "stationCode": "KCH",
+        "stationName": "කොච්චිකඩේ",
+        "stationID": 111
+      },
+      {
+        "stationCode": "KGA",
+        "stationName": "කොටගල",
+        "stationID": 118
+      },
+      {
+        "stationCode": "KOT",
+        "stationName": "කොට්ටාව",
+        "stationID": 137
+      },
+      {
+        "stationCode": "CRD",
+        "stationName": "කොටා පාර",
+        "stationID": 46
+      },
+      {
+        "stationCode": "FOT",
+        "stationName": "කොටුව",
+        "stationID": 61
+      },
+      {
+        "stationCode": "KKM",
+        "stationName": "කොඩිකාමම්",
+        "stationID": 397
+      },
+      {
+        "stationCode": "KDV",
+        "stationName": "කොන්ඩාවිල්",
+        "stationID": 422
+      },
+      {
+        "stationCode": "KPN",
+        "stationName": "කොම්පඤ්ඤවීදිය",
+        "stationID": 140
+      },
+      {
+        "stationCode": "KOR",
+        "stationName": "කොරලවැල්ල",
+        "stationID": 136
+      },
+      {
+        "stationCode": "KLP",
+        "stationName": "කොල්ලුපිටිය",
+        "stationID": 126
+      },
+      {
+        "stationCode": "KLN",
+        "stationName": "කොලොන්නාව",
+        "stationID": 125
+      },
+      {
+        "stationCode": "KSG",
+        "stationName": "කොස්ගම",
+        "stationID": 143
+      },
+      {
+        "stationCode": "KDA",
+        "stationName": "කොස්ගොඩ",
+        "stationID": 112
+      },
+      {
+        "stationCode": "KHA",
+        "stationName": "කොස්හින්න",
+        "stationID": 121
+      },
+      {
+        "stationCode": "KOM",
+        "stationName": "කොහොම්බිවල",
+        "stationID": 474
+      },
+      {
+        "stationCode": "KON",
+        "stationName": "කෝන්වැව",
+        "stationID": 135
+      },
+      {
+        "stationCode": "GDA",
+        "stationName": "ගංගොඩ",
+        "stationID": 65
+      },
+      {
+        "stationCode": "GTL",
+        "stationName": "ගංතලාව",
+        "stationID": 440
+      },
+      {
+        "stationCode": "GND",
+        "stationName": "ගනේගොඩ",
+        "stationID": 71
+      },
+      {
+        "stationCode": "GAN",
+        "stationName": "ගනේමුල්ල",
+        "stationID": 63
+      },
+      {
+        "stationCode": "GNW",
+        "stationName": "ගනේවත්ත",
+        "stationID": 73
+      },
+      {
+        "stationCode": "GPH",
+        "stationName": "ගම්පහ",
+        "stationID": 75
+      },
+      {
+        "stationCode": "GPL",
+        "stationName": "ගම්පොළ",
+        "stationID": 76
+      },
+      {
+        "stationCode": "GMA",
+        "stationName": "ගම්මන",
+        "stationID": 70
+      },
+      {
+        "stationCode": "GBD",
+        "stationName": "ගලබොඩ",
+        "stationID": 64
+      },
+      {
+        "stationCode": "GOA",
+        "stationName": "ගල්ඔය හංදිය",
+        "stationID": 74
+      },
+      {
+        "stationCode": "MLV",
+        "stationName": "ගල්කිස්ස",
+        "stationID": 439
+      },
+      {
+        "stationCode": "GLM",
+        "stationName": "ගල්ගමුව",
+        "stationID": 69
+      },
+      {
+        "stationCode": "GAL",
+        "stationName": "ගල්ලෑල්ල",
+        "stationID": 62
+      },
+      {
+        "stationCode": "GWN",
+        "stationName": "ග්‍රේට් වෙස්ටර්න්",
+        "stationID": 79
+      },
+      {
+        "stationCode": "GLE",
+        "stationName": "ගාල්ල",
+        "stationID": 68
+      },
+      {
+        "stationCode": "GNT",
+        "stationName": "ගිංතොට",
+        "stationID": 72
+      },
+      {
+        "stationCode": "GRB",
+        "stationName": "ගිරඹේ",
+        "stationID": 77
+      },
+      {
+        "stationCode": "GRB",
+        "stationName": "ගිරඹේ",
+        "stationID": 476
+      },
+      {
+        "stationCode": "GEY",
+        "stationName": "ගෙලිඔය",
+        "stationID": 66
+      },
+      {
+        "stationCode": "GGA",
+        "stationName": "ගොඩගම",
+        "stationID": 67
+      },
+      {
+        "stationCode": "CCH",
+        "stationName": "චාවකච්චේරි",
+        "stationID": 398
+      },
+      {
+        "stationCode": "CBY",
+        "stationName": "චීන වරාය",
+        "stationID": 43
+      },
+      {
+        "stationCode": "CKM",
+        "stationName": "චුන්නාකම්",
+        "stationID": 423
+      },
+      {
+        "stationCode": "CDK",
+        "stationName": "චෙන්ඩිකුලම්",
+        "stationID": 371
+      },
+      {
+        "stationCode": "JAP",
+        "stationName": "ජයන්තිපුර",
+        "stationID": 106
+      },
+      {
+        "stationCode": "JLA",
+        "stationName": "ජා ඇල",
+        "stationID": 107
+      },
+      {
+        "stationCode": "TPH",
+        "stationName": "තච්චන් තෝප්පු",
+        "stationID": 405
+      },
+      {
+        "stationCode": "TAN",
+        "stationName": "තබලගමුව",
+        "stationID": 450
+      },
+      {
+        "stationCode": "THAMBAGALLA",
+        "stationName": "තඹගල්ල",
+        "stationID": 414
+      },
+      {
+        "stationCode": "TBM",
+        "stationName": "තඹුත්තේගම",
+        "stationID": 263
+      },
+      {
+        "stationCode": "TKL",
+        "stationName": "තලවකැලේ",
+        "stationID": 269
+      },
+      {
+        "stationCode": "TWG",
+        "stationName": "තලවත්තෙගෙදර",
+        "stationID": 276
+      },
+      {
+        "stationCode": "TLP",
+        "stationName": "තල්පෙ",
+        "stationID": 271
+      },
+      {
+        "stationCode": "TLA",
+        "stationName": "තලාව",
+        "stationID": 270
+      },
+      {
+        "stationCode": "TLM",
+        "stationName": "තලේමන්නාරම",
+        "stationID": 437
+      },
+      {
+        "stationCode": "TMP",
+        "stationName": "තලේමන්නාරම් තොට",
+        "stationID": 438
+      },
+      {
+        "stationCode": "TCO",
+        "stationName": "ත්‍රිකුණාමළය",
+        "stationID": 264
+      },
+      {
+        "stationCode": "TDK",
+        "stationName": "තාණිඩිකුලම්",
+        "stationID": 265
+      },
+      {
+        "stationCode": "TBL",
+        "stationName": "තැඹිලිගල",
+        "stationID": 262
+      },
+      {
+        "stationCode": "TIM",
+        "stationName": "තිඹිරියාගෙදර",
+        "stationID": 268
+      },
+      {
+        "stationCode": "TNA",
+        "stationName": "තිරාණගම",
+        "stationID": 272
+      },
+      {
+        "stationCode": "TVM",
+        "stationName": "තිරුකේතීස්වරම්",
+        "stationID": 433
+      },
+      {
+        "stationCode": "TDY",
+        "stationName": "තිල්ලඩිය",
+        "stationID": 267
+      },
+      {
+        "stationCode": "TSM",
+        "stationName": "තිස්මල්පොල",
+        "stationID": 274
+      },
+      {
+        "stationCode": "TUD",
+        "stationName": "තුඩැල්ල",
+        "stationID": 275
+      },
+      {
+        "stationCode": "TDR",
+        "stationName": "තුම්මෝදර",
+        "stationID": 266
+      },
+      {
+        "stationCode": "THURULIYAGAMA",
+        "stationName": "තුරුලියගම",
+        "stationID": 455
+      },
+      {
+        "stationCode": "TPI",
+        "stationName": "තෙල්ලිප්පලෛයි",
+        "stationID": 426
+      },
+      {
+        "stationCode": "TWT",
+        "stationName": "තෙල්වත්ත",
+        "stationID": 277
+      },
+      {
+        "stationCode": "TVD",
+        "stationName": "තොඩ්ඩවේලි",
+        "stationID": 435
+      },
+      {
+        "stationCode": "DRL",
+        "stationName": "දාරලුව",
+        "stationID": 53
+      },
+      {
+        "stationCode": "DEWEDDA",
+        "stationName": "දෑවැද්ද",
+        "stationID": 417
+      },
+      {
+        "stationCode": "DLA",
+        "stationName": "දියතලාව",
+        "stationID": 50
+      },
+      {
+        "stationCode": "TRH",
+        "stationName": "දුම්රිය ස්ථාන අංක 1",
+        "stationID": 273
+      },
+      {
+        "stationCode": "DKD",
+        "stationName": "දෙකිඳ",
+        "stationID": 337
+      },
+      {
+        "stationCode": "DAG",
+        "stationName": "දෙමටගොඩ",
+        "stationID": 47
+      },
+      {
+        "stationCode": "DDR",
+        "stationName": "දෙමෝදර",
+        "stationID": 48
+      },
+      {
+        "stationCode": "DWL",
+        "stationName": "දෙහිවල",
+        "stationID": 54
+      },
+      {
+        "stationCode": "DPM",
+        "stationName": "දේවපුරම්",
+        "stationID": 52
+      },
+      {
+        "stationCode": "DNA",
+        "stationName": "දොඩන්දූව",
+        "stationID": 51
+      },
+      {
+        "stationCode": "NAG",
+        "stationName": "නාගොල්ලාගම",
+        "stationID": 191
+      },
+      {
+        "stationCode": "NAT",
+        "stationName": "නාත්තන්ඩිය",
+        "stationID": 192
+      },
+      {
+        "stationCode": "NOA",
+        "stationName": "නානු ඔය",
+        "stationID": 197
+      },
+      {
+        "stationCode": "NHP",
+        "stationName": "නාරහේන්පිට",
+        "stationID": 195
+      },
+      {
+        "stationCode": "NVT",
+        "stationName": "නාවක්කුලිය",
+        "stationID": 399
+      },
+      {
+        "stationCode": "NVP",
+        "stationName": "නාවලපිටිය",
+        "stationID": 201
+      },
+      {
+        "stationCode": "NWN",
+        "stationName": "නාවින්න",
+        "stationID": 202
+      },
+      {
+        "stationCode": "NLY",
+        "stationName": "නැලිය",
+        "stationID": 196
+      },
+      {
+        "stationCode": "NGM",
+        "stationName": "නෑගම",
+        "stationID": 194
+      },
+      {
+        "stationCode": "IPZ",
+        "stationName": "නිදහස් වෙළඳ කලාපය",
+        "stationID": 104
+      },
+      {
+        "stationCode": "NUG",
+        "stationName": "නුගේගොඩ",
+        "stationID": 200
+      },
+      {
+        "stationCode": "NOR",
+        "stationName": "නූරානගර්",
+        "stationID": 198
+      },
+      {
+        "stationCode": "NPK",
+        "stationName": "නෙලුම්පොකුණ",
+        "stationID": 199
+      },
+      {
+        "stationCode": "NELUMPATHGAMA",
+        "stationName": "නෙළුම්පත්ගම",
+        "stationID": 415
+      },
+      {
+        "stationCode": "PPL",
+        "stationName": "පට්ටිපොල",
+        "stationID": 230
+      },
+      {
+        "stationCode": "PTP",
+        "stationName": "පතන්පහ",
+        "stationID": 236
+      },
+      {
+        "stationCode": "PNL",
+        "stationName": "පනලීය",
+        "stationID": 226
+      },
+      {
+        "stationCode": "PAN",
+        "stationName": "පන්නිපිටිය",
+        "stationID": 205
+      },
+      {
+        "stationCode": "PNG",
+        "stationName": "පනාගොඩ",
+        "stationID": 224
+      },
+      {
+        "stationCode": "PGN",
+        "stationName": "පයාගල උතුර",
+        "stationID": 211
+      },
+      {
+        "stationCode": "PGS",
+        "stationName": "පයාගල දකුණ",
+        "stationID": 212
+      },
+      {
+        "stationCode": "PRN",
+        "stationName": "පරන්තන්",
+        "stationID": 394
+      },
+      {
+        "stationCode": "PHW",
+        "stationName": "පරසන්ගහවැව",
+        "stationID": 213
+      },
+      {
+        "stationCode": "PALLE TALAWINNA",
+        "stationName": "පල්ලෙතලවින්න",
+        "stationID": 465
+      },
+      {
+        "stationCode": "PLL",
+        "stationName": "පල්ලෙවෙල",
+        "stationID": 219
+      },
+      {
+        "stationCode": "PVI",
+        "stationName": "පලාවි",
+        "stationID": 238
+      },
+      {
+        "stationCode": "PUW",
+        "stationName": "පලුගස්වැව",
+        "stationID": 237
+      },
+      {
+        "stationCode": "PAL",
+        "stationName": "පලෙයි",
+        "stationID": 396
+      },
+      {
+        "stationCode": "PAHALAWARDHANA",
+        "stationName": "පහලවර්ධන",
+        "stationID": 420
+      },
+      {
+        "stationCode": "PGD",
+        "stationName": "පාතගම්ගොඩ",
+        "stationID": 209
+      },
+      {
+        "stationCode": "PDK",
+        "stationName": "පාදුක්ක",
+        "stationID": 208
+      },
+      {
+        "stationCode": "PND",
+        "stationName": "පානදුර",
+        "stationID": 223
+      },
+      {
+        "stationCode": "PRW",
+        "stationName": "පැඟිරිවත්ත",
+        "stationID": 233
+      },
+      {
+        "stationCode": "PKP",
+        "stationName": "පැරකුම්පුර",
+        "stationID": 459
+      },
+      {
+        "stationCode": "PKU",
+        "stationName": "පැරකූම්පුර",
+        "stationID": 216
+      },
+      {
+        "stationCode": "PINNAGOLLA",
+        "stationName": "පින්නගොල්ල",
+        "stationID": 416
+      },
+      {
+        "stationCode": "PNW",
+        "stationName": "පින්නවල",
+        "stationID": 228
+      },
+      {
+        "stationCode": "PIN",
+        "stationName": "පින්වත්ත",
+        "stationID": 214
+      },
+      {
+        "stationCode": "PYA",
+        "stationName": "පියගම",
+        "stationID": 240
+      },
+      {
+        "stationCode": "PGM",
+        "stationName": "පියදිගම",
+        "stationID": 210
+      },
+      {
+        "stationCode": "PLD",
+        "stationName": "පිලදුව",
+        "stationID": 485
+      },
+      {
+        "stationCode": "PLD",
+        "stationName": "පිලිදූව",
+        "stationID": 217
+      },
+      {
+        "stationCode": "PLT",
+        "stationName": "පිළිමතලාව",
+        "stationID": 222
+      },
+      {
+        "stationCode": "PTM",
+        "stationName": "පුත්තලම",
+        "stationID": 235
+      },
+      {
+        "stationCode": "PNK",
+        "stationName": "පුන්කන්කුලම්",
+        "stationID": 406
+      },
+      {
+        "stationCode": "PNI",
+        "stationName": "පුනානි",
+        "stationID": 225
+      },
+      {
+        "stationCode": "PCK",
+        "stationName": "පුලච්චිකුලම්",
+        "stationID": 206
+      },
+      {
+        "stationCode": "PKM",
+        "stationName": "පුලියන්කුලම්",
+        "stationID": 330
+      },
+      {
+        "stationCode": "PWP",
+        "stationName": "පුවක්පිටිය",
+        "stationID": 445
+      },
+      {
+        "stationCode": "PWP Town",
+        "stationName": "පුවක්පිටිය නගරය",
+        "stationID": 446
+      },
+      {
+        "stationCode": "PON",
+        "stationName": "පූනෑව",
+        "stationID": 229
+      },
+      {
+        "stationCode": "PRP",
+        "stationName": "පෙම්රෝස්",
+        "stationID": 232
+      },
+      {
+        "stationCode": "PNV",
+        "stationName": "පෙරියනාගවිල්ලු",
+        "stationID": 227
+      },
+      {
+        "stationCode": "PORAPOLA",
+        "stationName": "පොරපොල",
+        "stationID": 419
+      },
+      {
+        "stationCode": "PORAPOLA JUNC.",
+        "stationName": "පොරපොල හන්දිය",
+        "stationID": 418
+      },
+      {
+        "stationCode": "PRL",
+        "stationName": "පේරලන්ද",
+        "stationID": 231
+      },
+      {
+        "stationCode": "PDA",
+        "stationName": "පේරාදෙණිය",
+        "stationID": 207
+      },
+      {
+        "stationCode": "PES",
+        "stationName": "පේසා ලේ",
+        "stationID": 436
+      },
+      {
+        "stationCode": "PTA",
+        "stationName": "පොතුහැර",
+        "stationID": 234
+      },
+      {
+        "stationCode": "PLG",
+        "stationName": "පොල්ගහවෙල",
+        "stationID": 218
+      },
+      {
+        "stationCode": "PLR",
+        "stationName": "පොල්වතුමෝදර",
+        "stationID": 221
+      },
+      {
+        "stationCode": "PLN",
+        "stationName": "පොලොන්නරුව",
+        "stationID": 220
+      },
+      {
+        "stationCode": "BGY",
+        "stationName": "බංගෙදනිය",
+        "stationID": 28
+      },
+      {
+        "stationCode": "BTU",
+        "stationName": "බටුවත්ත",
+        "stationID": 41
+      },
+      {
+        "stationCode": "BDA",
+        "stationName": "බණ්ඩාරවෙල",
+        "stationID": 25
+      },
+      {
+        "stationCode": "BOA",
+        "stationName": "බත්තලුඔය",
+        "stationID": 33
+      },
+      {
+        "stationCode": "BAD",
+        "stationName": "බදුල්ල",
+        "stationID": 23
+      },
+      {
+        "stationCode": "BAM",
+        "stationName": "බබරැන්ද",
+        "stationID": 488
+      },
+      {
+        "stationCode": "BPT",
+        "stationName": "බම්බලපිටිය",
+        "stationID": 35
+      },
+      {
+        "stationCode": "BNA",
+        "stationName": "බලන",
+        "stationID": 31
+      },
+      {
+        "stationCode": "BPA",
+        "stationName": "බලපිටිය",
+        "stationID": 34
+      },
+      {
+        "stationCode": "BJM",
+        "stationName": "බුත්ගමුව",
+        "stationID": 29
+      },
+      {
+        "stationCode": "BGH",
+        "stationName": "බුලුගහගොඩ",
+        "stationID": 27
+      },
+      {
+        "stationCode": "BSH",
+        "stationName": "බූස්ස",
+        "stationID": 38
+      },
+      {
+        "stationCode": "BNT",
+        "stationName": "බෙන්තොට",
+        "stationID": 32
+      },
+      {
+        "stationCode": "BEM",
+        "stationName": "බෙම්මුල්ල",
+        "stationID": 26
+      },
+      {
+        "stationCode": "BEL",
+        "stationName": "බෙලිඅත්ත",
+        "stationID": 490
+      },
+      {
+        "stationCode": "BRL",
+        "stationName": "බේරුවල",
+        "stationID": 36
+      },
+      {
+        "stationCode": "BSL",
+        "stationName": "බේස්ලයින් පාර",
+        "stationID": 39
+      },
+      {
+        "stationCode": "BSA",
+        "stationName": "බොරලැස්ස",
+        "stationID": 37
+      },
+      {
+        "stationCode": "BTL",
+        "stationName": "බෝතලෙ",
+        "stationID": 40
+      },
+      {
+        "stationCode": "BLT",
+        "stationName": "බෝලවත්ත",
+        "stationID": 30
+      },
+      {
+        "stationCode": "MGE",
+        "stationName": "මංගලඑලිය",
+        "stationID": 165
+      },
+      {
+        "stationCode": "MGG",
+        "stationName": "මගලෙගොඩ",
+        "stationID": 393
+      },
+      {
+        "stationCode": "MAGALEGODA",
+        "stationName": "මගලේගොඩ",
+        "stationID": 472
+      },
+      {
+        "stationCode": "MGN",
+        "stationName": "මග්ගොන",
+        "stationID": 167
+      },
+      {
+        "stationCode": "BCO",
+        "stationName": "මඩකලපුව",
+        "stationID": 24
+      },
+      {
+        "stationCode": "MRD",
+        "stationName": "මඩු පාර",
+        "stationID": 372
+      },
+      {
+        "stationCode": "MKI",
+        "stationName": "මදුරන්කුලිය",
+        "stationID": 174
+      },
+      {
+        "stationCode": "MPT",
+        "stationName": "මනම්පිටිය",
+        "stationID": 183
+      },
+      {
+        "stationCode": "MAN",
+        "stationName": "මන්නාරම",
+        "stationID": 434
+      },
+      {
+        "stationCode": "MRK",
+        "stationName": "මරකොන",
+        "stationID": 462
+      },
+      {
+        "stationCode": "MDA",
+        "stationName": "මරදාන",
+        "stationID": 160
+      },
+      {
+        "stationCode": "MRL",
+        "stationName": "මරලුවැව",
+        "stationID": 454
+      },
+      {
+        "stationCode": "MAL",
+        "stationName": "මලක්කම්",
+        "stationID": 427
+      },
+      {
+        "stationCode": "MWA",
+        "stationName": "මහ ඉඳුරූව",
+        "stationID": 188
+      },
+      {
+        "stationCode": "SCR",
+        "stationName": "මහ ලේඛම් කාර්යාලය",
+        "stationID": 252
+      },
+      {
+        "stationCode": "KDT",
+        "stationName": "මහනුවර",
+        "stationID": 115
+      },
+      {
+        "stationCode": "MYA",
+        "stationName": "මහයියාව",
+        "stationID": 190
+      },
+      {
+        "stationCode": "MAG",
+        "stationName": "මහරගම",
+        "stationID": 159
+      },
+      {
+        "stationCode": "MHO",
+        "stationName": "මහව",
+        "stationID": 170
+      },
+      {
+        "stationCode": "MTR",
+        "stationName": "මාතර",
+        "stationID": 187
+      },
+      {
+        "stationCode": "MTL",
+        "stationName": "මාතලේ",
+        "stationID": 186
+      },
+      {
+        "stationCode": "MTM",
+        "stationName": "මාතොට්ටම්",
+        "stationID": 432
+      },
+      {
+        "stationCode": "MPA",
+        "stationName": "මාදම්පගම",
+        "stationID": 181
+      },
+      {
+        "stationCode": "MDP",
+        "stationName": "මාදම්පේ",
+        "stationID": 161
+      },
+      {
+        "stationCode": "MKM",
+        "stationName": "මාන්කුලම්",
+        "stationID": 331
+      },
+      {
+        "stationCode": "MNG",
+        "stationName": "මානුවංගම",
+        "stationID": 179
+      },
+      {
+        "stationCode": "MVT",
+        "stationName": "මාවිත්තපුරම්",
+        "stationID": 425
+      },
+      {
+        "stationCode": "MWD",
+        "stationName": "මාවිල්මඩ",
+        "stationID": 466
+      },
+      {
+        "stationCode": "MEM",
+        "stationName": "මැදගම",
+        "stationID": 163
+      },
+      {
+        "stationCode": "MWH",
+        "stationName": "මැදවච්චිය",
+        "stationID": 189
+      },
+      {
+        "stationCode": "MEDDEGAMA",
+        "stationName": "මැද්දෙගම",
+        "stationID": 421
+      },
+      {
+        "stationCode": "MED",
+        "stationName": "මිදිගම",
+        "stationID": 162
+      },
+      {
+        "stationCode": "MIY",
+        "stationName": "මින්නේරිය",
+        "stationID": 173
+      },
+      {
+        "stationCode": "Miriswatte",
+        "stationName": "මිරිස්වත්ත",
+        "stationID": 443
+      },
+      {
+        "stationCode": "MIS",
+        "stationName": "මිරිස්ස",
+        "stationID": 172
+      },
+      {
+        "stationCode": "MSL",
+        "stationName": "මිරිසුවිල්",
+        "stationID": 402
+      },
+      {
+        "stationCode": "MIRIHANPITIGAMA",
+        "stationName": "මිරිහන්පිටිගම",
+        "stationID": 409
+      },
+      {
+        "stationCode": "MHN",
+        "stationName": "මිහින්තලය",
+        "stationID": 169
+      },
+      {
+        "stationCode": "MHJ",
+        "stationName": "මිහින්තලේ හංදිය",
+        "stationID": 168
+      },
+      {
+        "stationCode": "MGD",
+        "stationName": "මී ගොඩ",
+        "stationID": 164
+      },
+      {
+        "stationCode": "MGN",
+        "stationName": "මීගම්මන",
+        "stationID": 464
+      },
+      {
+        "stationCode": "NGB",
+        "stationName": "මීගමුව",
+        "stationID": 193
+      },
+      {
+        "stationCode": "MIR",
+        "stationName": "මීරිගම",
+        "stationID": 171
+      },
+      {
+        "stationCode": "MES",
+        "stationName": "මීසාල‍ෛ",
+        "stationID": 403
+      },
+      {
+        "stationCode": "MNL",
+        "stationName": "මුංදාල්",
+        "stationID": 180
+      },
+      {
+        "stationCode": "MTG",
+        "stationName": "මුත්තෙට්ටුගල",
+        "stationID": 185
+      },
+      {
+        "stationCode": "MRK",
+        "stationName": "මුරිකන්ඩි",
+        "stationID": 332
+      },
+      {
+        "stationCode": "MUK",
+        "stationName": "මුරුන්කන්",
+        "stationID": 431
+      },
+      {
+        "stationCode": "MKP",
+        "stationName": "මොරකැලේ",
+        "stationID": 175
+      },
+      {
+        "stationCode": "MLG",
+        "stationName": "මොරගොල්ලගම",
+        "stationID": 176
+      },
+      {
+        "stationCode": "MRT",
+        "stationName": "මොරටුව",
+        "stationID": 184
+      },
+      {
+        "stationCode": "MLP",
+        "stationName": "මොල්ලිපතාන",
+        "stationID": 177
+      },
+      {
+        "stationCode": "YGM",
+        "stationName": "යටගම",
+        "stationID": 313
+      },
+      {
+        "stationCode": "YWR",
+        "stationName": "යටවර",
+        "stationID": 463
+      },
+      {
+        "stationCode": "YTR",
+        "stationName": "යටිරාවන",
+        "stationID": 311
+      },
+      {
+        "stationCode": "YTG",
+        "stationName": "යත්තල්ගොඩ",
+        "stationID": 316
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 387
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 389
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 391
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 312
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 388
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 390
+      },
+      {
+        "stationCode": "YGD",
+        "stationName": "යාගොඩ",
+        "stationID": 473
+      },
+      {
+        "stationCode": "JFN",
+        "stationName": "යාපනය",
+        "stationID": 400
+      },
+      {
+        "stationCode": "YPW",
+        "stationName": "යාපහුව",
+        "stationID": 315
+      },
+      {
+        "stationCode": "RMA",
+        "stationName": "රණමුග්ගමුව",
+        "stationID": 247
+      },
+      {
+        "stationCode": "RTG",
+        "stationName": "රත්ගම",
+        "stationID": 249
+      },
+      {
+        "stationCode": "RML",
+        "stationName": "රත්මලාන",
+        "stationID": 248
+      },
+      {
+        "stationCode": "RDL",
+        "stationName": "රදැල්ල",
+        "stationID": 243
+      },
+      {
+        "stationCode": "RGA",
+        "stationName": "රන්දෙණිගම",
+        "stationID": 245
+      },
+      {
+        "stationCode": "RBK",
+        "stationName": "රඹුක්කන",
+        "stationID": 241
+      },
+      {
+        "stationCode": "RGM",
+        "stationName": "රාගම",
+        "stationID": 246
+      },
+      {
+        "stationCode": "RCH",
+        "stationName": "රිච්මන්ඩ් කන්ද",
+        "stationID": 242
+      },
+      {
+        "stationCode": "RDL",
+        "stationName": "රීදීතැන්න",
+        "stationID": 244
+      },
+      {
+        "stationCode": "RZL",
+        "stationName": "රොසැල්ල",
+        "stationID": 250
+      },
+      {
+        "stationCode": "LYA",
+        "stationName": "ලක්සඋයන",
+        "stationID": 158
+      },
+      {
+        "stationCode": "LGM",
+        "stationName": "ලියනගේමුල්ල",
+        "stationID": 155
+      },
+      {
+        "stationCode": "LIYANWALA",
+        "stationName": "ලියන්වල",
+        "stationID": 334
+      },
+      {
+        "stationCode": "LWL",
+        "stationName": "ලුණුවිල",
+        "stationID": 157
+      },
+      {
+        "stationCode": "LNA",
+        "stationName": "ලුනාව",
+        "stationID": 156
+      },
+      {
+        "stationCode": "WGG",
+        "stationName": "වග",
+        "stationID": 295
+      },
+      {
+        "stationCode": "WTG",
+        "stationName": "වටගොඩ",
+        "stationID": 308
+      },
+      {
+        "stationCode": "WAP",
+        "stationName": "වටරෑක",
+        "stationID": 336
+      },
+      {
+        "stationCode": "WLA",
+        "stationName": "වටවල",
+        "stationID": 300
+      },
+      {
+        "stationCode": "WGA",
+        "stationName": "වත්තේගම",
+        "stationID": 294
+      },
+      {
+        "stationCode": "WSL",
+        "stationName": "වනවාසල",
+        "stationID": 306
+      },
+      {
+        "stationCode": "WRW",
+        "stationName": "වඳුරාව",
+        "stationID": 305
+      },
+      {
+        "stationCode": "WKL",
+        "stationName": "වයික්කාල",
+        "stationID": 299
+      },
+      {
+        "stationCode": "WKA",
+        "stationName": "වලකුඹුර",
+        "stationID": 297
+      },
+      {
+        "stationCode": "WALASWEWA",
+        "stationName": "වලස්වැව ",
+        "stationID": 407
+      },
+      {
+        "stationCode": "WHP",
+        "stationName": "වලහපිටිය",
+        "stationID": 296
+      },
+      {
+        "stationCode": "WLG",
+        "stationName": "වල්ගම",
+        "stationID": 301
+      },
+      {
+        "stationCode": "WPA",
+        "stationName": "වල්පොල",
+        "stationID": 303
+      },
+      {
+        "stationCode": "VNA",
+        "stationName": "වවුනියා",
+        "stationID": 289
+      },
+      {
+        "stationCode": "WDA",
+        "stationName": "වාද්දුව",
+        "stationID": 292
+      },
+      {
+        "stationCode": "VML",
+        "stationName": "වාන්ඩරමුල්ලයි",
+        "stationID": 288
+      },
+      {
+        "stationCode": "VCH",
+        "stationName": "වාලච්චෙනෙයි",
+        "stationID": 286
+      },
+      {
+        "stationCode": "WEL",
+        "stationName": "වැල්ලව",
+        "stationID": 293
+      },
+      {
+        "stationCode": "WTE",
+        "stationName": "වැල්ලවත්ත",
+        "stationID": 307
+      },
+      {
+        "stationCode": "WKD",
+        "stationName": "වැලිකන්ද",
+        "stationID": 298
+      },
+      {
+        "stationCode": "WLM",
+        "stationName": "වැලිගම",
+        "stationID": 302
+      },
+      {
+        "stationCode": "WEW",
+        "stationName": "වැවුරුකන්නල",
+        "stationID": 489
+      },
+      {
+        "stationCode": "WRD",
+        "stationName": "විජයරාජදහන",
+        "stationID": 304
+      },
+      {
+        "stationCode": "WLP",
+        "stationName": "විරල්මුරිප්පුව",
+        "stationID": 340
+      },
+      {
+        "stationCode": "WWT",
+        "stationName": "විල්වත්ත",
+        "stationID": 309
+      },
+      {
+        "stationCode": "WEH",
+        "stationName": "වෙහෙරහෛ්න",
+        "stationID": 486
+      },
+      {
+        "stationCode": "WERAGALA",
+        "stationName": "වේරගල",
+        "stationID": 411
+      },
+      {
+        "stationCode": "VGD",
+        "stationName": "වේයන්ගොඩ",
+        "stationID": 287
+      },
+      {
+        "stationCode": "SRP",
+        "stationName": "ශ්‍රාවස්තිපුර",
+        "stationID": 256
+      },
+      {
+        "stationCode": "SAK",
+        "stationName": "සන්කන්තාන‍ෛ",
+        "stationID": 404
+      },
+      {
+        "stationCode": "SUA",
+        "stationName": "සරසවිඋයන",
+        "stationID": 257
+      },
+      {
+        "stationCode": "SWR",
+        "stationName": "සවරන",
+        "stationID": 259
+      },
+      {
+        "stationCode": "SAL",
+        "stationName": "සාලියපුර",
+        "stationID": 251
+      },
+      {
+        "stationCode": "SLM",
+        "stationName": "සියඔලාගහවැව",
+        "stationID": 339
+      },
+      {
+        "stationCode": "SYA",
+        "stationName": "සියලන්ගමුව",
+        "stationID": 260
+      },
+      {
+        "stationCode": "SED",
+        "stationName": "සීදුව",
+        "stationID": 253
+      },
+      {
+        "stationCode": "SMA",
+        "stationName": "සීනිගම",
+        "stationID": 255
+      },
+      {
+        "stationCode": "SGM",
+        "stationName": "සෙනරත්ගම",
+        "stationID": 254
+      },
+      {
+        "stationCode": "SVP",
+        "stationName": "සෙවනපිටිය",
+        "stationID": 258
+      },
+      {
+        "stationCode": "HAU",
+        "stationName": "හතමුන",
+        "stationID": 80
+      },
+      {
+        "stationCode": "HKT",
+        "stationName": "හතරැස් කොටුව",
+        "stationID": 87
+      },
+      {
+        "stationCode": "HADIRIWALANA",
+        "stationName": "හදිරිවලාන",
+        "stationID": 456
+      },
+      {
+        "stationCode": "HPT",
+        "stationName": "හපුතලේ",
+        "stationID": 92
+      },
+      {
+        "stationCode": "HBD",
+        "stationName": "හබරාදුව",
+        "stationID": 81
+      },
+      {
+        "stationCode": "HBN",
+        "stationName": "හඹරණ",
+        "stationID": 82
+      },
+      {
+        "stationCode": "HYP",
+        "stationName": "හයින්පෝට්",
+        "stationID": 98
+      },
+      {
+        "stationCode": "CHL",
+        "stationName": "හලාවත",
+        "stationID": 44
+      },
+      {
+        "stationCode": "HEA",
+        "stationName": "හාලිඇල",
+        "stationID": 84
+      },
+      {
+        "stationCode": "HTN",
+        "stationName": "හැටන්",
+        "stationID": 96
+      },
+      {
+        "stationCode": "HKD",
+        "stationName": "හික්කඩුව",
+        "stationID": 86
+      },
+      {
+        "stationCode": "Hingurala",
+        "stationName": "හිගුරල",
+        "stationID": 444
+      },
+      {
+        "stationCode": "HRG",
+        "stationName": "හිඟුරක්ගොඩ",
+        "stationID": 93
+      },
+      {
+        "stationCode": "HRL",
+        "stationName": "හිරියාල",
+        "stationID": 94
+      },
+      {
+        "stationCode": "HDP",
+        "stationName": "හීන්දෙනිය",
+        "stationID": 83
+      },
+      {
+        "stationCode": "HLO",
+        "stationName": "හීල්ඔය",
+        "stationID": 89
+      },
+      {
+        "stationCode": "HUN",
+        "stationName": "හුනුපිටිය",
+        "stationID": 97
+      },
+      {
+        "stationCode": "HML",
+        "stationName": "හෙට්ටිමුල්ල",
+        "stationID": 91
+      },
+      {
+        "stationCode": "HRP",
+        "stationName": "හොරපෙ",
+        "stationID": 95
+      },
+      {
+        "stationCode": "HLA",
+        "stationName": "හොරිවිල",
+        "stationID": 88
+      },
+      {
+        "stationCode": "HMA",
+        "stationName": "හෝමාගම ",
+        "stationID": 90
+      },
+      {
+        "stationCode": "HHR",
+        "stationName": "හෝමාගම රෝහල",
+        "stationID": 85
+      },
+      {
+        "stationCode": "NYK",
+        "stationName": "ෙනරියකුලම්",
+        "stationID": 370
+      }
+    ]
+  },
+  "MESSAGE": "Found 411 Results!",
+  "SUCCESS": true,
+  "NOFRESULTS": 411,
+  "STATUSCODE": "2000"
 }
