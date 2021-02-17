@@ -23,7 +23,7 @@ class _StationSearchState extends State<StationSearch> {
   void getStations() async {
     try {
       final response = await http.get(
-          "https://onlinetrainticket-17091-default-rtdb.firebaseio.com/station.json");
+          "https://onlinetrainticket-17091-default-rtdb.firebaseio.com/stationList.json");
       if (response.statusCode == 200) {
         stations = loadStations(response.body);
         print('Stations: ${stations.length}');
@@ -39,7 +39,7 @@ class _StationSearchState extends State<StationSearch> {
   void getStations1() async {
     try {
       final response = await http.get(
-          "https://onlinetrainticket-17091-default-rtdb.firebaseio.com/station.json");
+          "https://onlinetrainticket-17091-default-rtdb.firebaseio.com/stationList.json");
       if (response.statusCode == 200) {
         stations1 = loadStations1(response.body);
         print('Stations: ${stations1.length}');
@@ -70,36 +70,44 @@ class _StationSearchState extends State<StationSearch> {
   }
 
   Widget row(Stations stations) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          stations.name,
-          style: TextStyle(
-            fontSize: 20.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.normal,
-          ),
-        )
-      ],
+    return Card(
+      child: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              stations.name,
+              style: TextStyle(
+                fontSize: 16.0,
+                color: Colors.black,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
   Widget row1(Stations1 stations1) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          stations1.name1,
-          style: TextStyle(
-            fontSize: 20.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.normal,
-          ),
-        )
-      ],
+    return Card(
+      child: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              stations1.name1,
+              style: TextStyle(
+                fontSize: 16.0,
+                color: Colors.black,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
