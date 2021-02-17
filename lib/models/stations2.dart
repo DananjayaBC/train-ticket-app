@@ -6,8 +6,8 @@ class Stations1 {
 
   factory Stations1.fromJson(Map<String, dynamic> parsedJson) {
     return Stations1(
-      id1: parsedJson["id"],
-      name1: parsedJson["name"] as String,
+      id1: parsedJson["stationID"],
+      name1: parsedJson["stationName"] as String,
     );
   }
 }
