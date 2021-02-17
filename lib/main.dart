@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:train_ticket_app/home/nav.dart';
 import 'package:train_ticket_app/login/create_login.dart';
@@ -5,7 +6,10 @@ import 'package:train_ticket_app/login/first_view.dart';
 import 'package:train_ticket_app/services/auth_service.dart';
 import 'package:train_ticket_app/widgets/provider_widet.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  HttpOverrides.global = new MyHttpOverrides();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -47,6 +51,15 @@ class HomeController extends StatelessWidget {
         return CircularProgressIndicator();
       },
     );
+  }
+}
+
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
   }
 }
 // void main() async {
