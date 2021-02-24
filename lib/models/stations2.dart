@@ -1,8 +1,13 @@
+import 'package:flutter/cupertino.dart';
+
 class Stations1 {
   int id1;
   String name1;
 
-  Stations1({this.id1, this.name1});
+ Stations1({
+    @required this.id1,
+    @required this.name1,
+  });
 
   factory Stations1.fromJson(Map<String, dynamic> parsedJson) {
     return Stations1(

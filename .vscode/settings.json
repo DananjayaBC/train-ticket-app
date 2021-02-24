@@ -1,0 +1,10 @@
+{
+    "rest-client.environmentVariables": {
+        "sandbox": {
+            "baseUrl":"http://api.lankagate.gov.lk:8280",
+            "authorization":"Y0h2YWw2Z3pnZjdzOFR3UlB5UThoWUpmT21VYTpoUmJob0ZpZmRCb1lUVTFEUWI3ZlVrczlqZjRh",
+            "accessToken": "4a9d431a-5961-3982-94ae-4c2eac400265"       
+        },
+        "production": {}
+    }
+}

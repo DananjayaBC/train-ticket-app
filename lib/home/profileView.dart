@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:train_ticket_app/login/first_view.dart';
 import 'package:train_ticket_app/widgets/provider_widet.dart';
-import 'package:intl/intl.dart';
+
 
 class ProfileView extends StatelessWidget {
   @override

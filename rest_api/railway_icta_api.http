@@ -1,0 +1,25 @@
+
+#Used to get an acess token given an autorization key
+POST {{baseUrl}}/token?grant_type=client_credentials
+Authorization: Basic {{authorization}}
+
+###
+
+GET {{baseUrl}}/railway/1.0/station/getAll/
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+GET {{baseUrl}}/railway/1.0/train/searchTrain?startStationID=75&endStationID=171&startTime=00:00:00&endTime=23:59:00&lang=en&searchDate=2021-02-21
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+GET {{baseUrl}}/railway/1.0/ticket/getPrice
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+
+

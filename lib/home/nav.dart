@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:train_ticket_app/home/History.dart';
 
 import 'package:train_ticket_app/home/profileView.dart';
 import 'package:train_ticket_app/home/stationSearch.dart';
@@ -12,7 +13,7 @@ class _NavState extends State<Nav> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
     StationSearch(),
-    Text('Ticket history Screen'),
+    History(),
     ProfileView(),
   ];
 
