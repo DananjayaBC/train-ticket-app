@@ -1,16 +1,19 @@
-# train_ticket_app
+  Online Train Ticket Buying System
+                                                         
+                                                                                                             
+   Rail transport is one of the most important methods and plays a very important role in the field of transport. With such a large customer base, buying train tickets has become a very major issue. With the acceleration of technology, train e-ticket systems have been developed, but they are not as economically viable as smartphone apps. After considering the above, "Sri Lanka Railways (SLR)" has been developed as a mobile phone for accessing online lists and relevant information through various locations across the Internet. Sri Lanka Railways applications can be sorted by the user first creating an account and then adding train details. As soon as the payment is made, the reference number generates the application. While this is convenient for most people, it has made things particularly easier for people residing in remote areas. It is easier to stand in long queues. So, they can reserve a seat in the relevant compartment and book tickets with the taps which are available for booking and can check the train available for the day and time they want. They can graphically see those details. The system has a separate application called checker application (SLRCS) for validation of ticket. As an alternative, converting automatic ticket checks from the manual removes a huge amount of work from the ticket inspector for ticket verification. This is done by scanning only with their Android phones to confirm the ticket. Employees of the Department of Railways will be logged in to create a reference number compare ticket reservation verification account using this app and system. Further the android and cloud-based technologies have been used for the development process of both applications. The Department of Railways has successfully developed an online mobile ticket reservation system that can satisfy current problems for passengers booking tickets for application journeys. The test has been successfully performed by users of different backgrounds.  Applications for client-side management can be proposed for further improvement to this project. It will also include a dashboard for managing data as an administrator. In current application, the database updates manually. Need to focus on a post method that needs to be updated automatically. And payment methods must be applied to the implementation phase. Developed Sri Lanka Railways Applications will contribute to a positive impact on the business economy of Sri Lanka. Of course, it will be useful for all users to travel by train and it will make their lives easier.
+   
+   1.	Introduction
 
-A new Flutter application.
+      This is about a website and a mobile app in order to buy train tickets. In the current system, there is a long queue to buy tickets every day. As a result, many train passengers miss their train. So in this case I propose a solution for this online ticket buying system. This allows you to purchase train tickets website or over the mobile app. This system allows passengers to choose the train station where they start their journey and the station where they end their journey. Passengers can also view the train schedule and they can use credit or debit cards to pay for tickets. Each ticket purchased has a different QR code. This will allow train ticket inspectors to check the validity of the ticket.
 
-## Getting Started
+      Another mobile app is being developed for train ticket inspectors to check tickets. This allows train ticket inspectors to verify the validity of the ticket by scanning the QR code on the ticket.
 
-This project is a starting point for a Flutter application.
+I have done technology research on what I want this application to implement. I researched Flutter, Firebase, Firebase authentication, API, Payment gateway verification methods and notification systems. This program contains the following functionalities.
 
-A few resources to get you started if this is your first Flutter project:
+1.	Giving each passenger the opportunity to create a new account.
+2.	Facilitate passengers to view previously purchased ticket details.
+3.	Provide the opportunity to select a train to travel by monitoring daily train schedules.
+4.	Provide passengers with the opportunity to use their personal bank credit cards and debit cards to make payments.
+5.	Adjust the pricing system to change from the departing station to the end of the journey.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
