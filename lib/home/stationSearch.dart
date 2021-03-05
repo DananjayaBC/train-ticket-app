@@ -5,13 +5,19 @@ import 'package:train_ticket_app/models/stations2.dart';
 import 'package:autocomplete_textfield/autocomplete_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
+import 'package:razorpay_flutter/razorpay_flutter.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:train_ticket_app/widgets/provider_widet.dart';
+import 'package:intl/intl.dart';
 
 class StationSearch extends StatefulWidget {
   final dio =
       Dio(BaseOptions(baseUrl: 'http://api.lankagate.gov.lk:8280', headers: {
     'Accept': 'application/json',
-    'Authorization': 'Bearer 92c36daa-65d9-3281-b5c4-d57d36a3e82f'
+    'Authorization': 'Bearer 1ef23f8b-66ee-3ae5-8fcf-00b25a07b3dc'
   }));
+
   @override
   _StationSearchState createState() => _StationSearchState();
 }
@@ -332,6 +338,7 @@ class _StationSearchState extends State<StationSearch> {
                             searchTrain(_search1);
                             priceTrain(_search);
                             priceTrain(_search1);
+
                             date;
                             time;
                           },
@@ -391,7 +398,8 @@ class _StationSearchState extends State<StationSearch> {
                   : Expanded(
                       child: ListView(
                         children: _directTrains
-                            .map((json) => TrainItem(TrainList(json)))
+                            .map((json) =>
+                                TrainItem(TrainList(json), PriceList(json)))
                             .toList(),
                       ),
                     ),
@@ -405,8 +413,9 @@ class _StationSearchState extends State<StationSearch> {
 
 class TrainItem extends StatelessWidget {
   final TrainList trainList;
+  final PriceList priceList;
 
-  TrainItem(this.trainList);
+  TrainItem(this.trainList, this.priceList);
 
   @override
   Widget build(BuildContext context) {
@@ -431,6 +440,48 @@ class TrainItem extends StatelessWidget {
                     children: [
                       Text(
                           "${trainList.startStationName}-${trainList.endStationName}",
+                          style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue)),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                          "Arrive at ${trainList.startStationName}              ${trainList.arrivalTime}",
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          )),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                          "Reach ${trainList.endStationName}                ${trainList.arrivalTimeEndStation}",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold)),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text("Train Type     ${trainList.trainType}",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold)),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                          "End Station                ${trainList.finalStationName}",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold)),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                          "Available classes                ${trainList.classList}",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold)),
+                      Text(
+                          "Available classes                ${priceList.priceLKR}",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold)),
                     ],
@@ -488,25 +539,111 @@ class TrainItem extends StatelessWidget {
   }
 }
 
-class PriceItem extends StatelessWidget {
+class PriceItem extends StatefulWidget {
   final PriceList priceList;
 
   PriceItem(this.priceList);
+
+  @override
+  _PriceItemState createState() => _PriceItemState();
+}
+
+class _PriceItemState extends State<PriceItem> {
+  final db = Firestore.instance;
+  Razorpay _razorpay;
+
+  @override
+  void initState() {
+    super.initState();
+    _razorpay = Razorpay();
+    _razorpay.on(Razorpay.EVENT_PAYMENT_SUCCESS, _handlePaymentSuccess);
+    _razorpay.on(Razorpay.EVENT_PAYMENT_ERROR, _handlePaymentError);
+    _razorpay.on(Razorpay.EVENT_EXTERNAL_WALLET, _handleExternalWallet);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _razorpay.clear(); // Removes all listeners
+  }
+
+  void openCheackout() async {
+    var options = {
+      'key': 'rzp_test_o4J55Xwza1ZYNd',
+      'amount': num.parse(widget.priceList.priceLKR) *
+          100, //in the smallest currency sub-unit.
+      'name': 'Acme Corp.',
+      'order_id': '', // Generate order_id using Orders API
+      'description': '',
+      'timeout': 300, // in seconds
+      'prefill': {'contact': '', 'email': ''}
+    };
+    try {
+      _razorpay.open(options);
+    } catch (e) {
+      debugPrint(e);
+    }
+  }
+
+  String formattedDate;
+
+  void _handlePaymentSuccess(PaymentSuccessResponse response) async {
+    Fluttertoast.showToast(msg: "SUCCESS " + response.paymentId);
+
+    final uid = await Provider.of(context).auth.getCurrentUID();
+    await db.collection("userData").document(uid).collection('payments').add({
+      'price': widget.priceList.priceLKR,
+      'class': widget.priceList.className,
+      'startStation': 'Mirigama',
+      'endStation': 'Gampaha',
+      'name': 'Dananjaya jayalath',
+      'description': 'Mirigama-Gampaha',
+      'PaymentType': 'paid',
+      'date': formattedDate,
+      'PaymentId': response.paymentId
+    });
+  }
+
+  void _handlePaymentError(PaymentFailureResponse response) {
+    Fluttertoast.showToast(
+        msg: "ERROR" + response.code.toString() + " - " + response.message);
+  }
+
+  void _handleExternalWallet(ExternalWalletResponse response) {
+    Fluttertoast.showToast(msg: "EXTERNAL WALLET" + response.walletName);
+  }
+
   @override
   Widget build(BuildContext context) {
+    var now = new DateTime.now();
+    var formatter = new DateFormat('yyyy-MM-dd – hh:mm');
+    formattedDate = formatter.format(now);
+    print(formattedDate); // 2016-01-25
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          '${priceList.className}-',
+          '${widget.priceList.className}-',
           style: TextStyle(
-              fontSize: 15, fontWeight: FontWeight.w500, color: Colors.green),
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+              color: Colors.blueGrey),
         ),
-        Text(
-          'Price Rs.${priceList.priceLKR}',
-          style: TextStyle(
-              fontSize: 15, fontWeight: FontWeight.w500, color: Colors.black),
-        )
+        // Text(
+        //   'Price Rs.${widget.priceList.priceLKR}',
+        //   style: TextStyle(
+        //       fontSize: 15, fontWeight: FontWeight.w500, color: Colors.black),
+        // ),
+        RaisedButton.icon(
+          onPressed: () async {
+            openCheackout();
+          },
+          icon: Icon(Icons.payment),
+          label: Text('${widget.priceList.priceLKR}'),
+          color: Colors.orangeAccent,
+          textColor: Colors.white,
+        ),
       ],
 
       // trailing: Text('Arivel Time-${trainList.arrivalTimeEndStation}'),
@@ -524,6 +661,9 @@ class TrainList {
   final String arrivalTimeEndStation;
   final String arrivalTime;
   final String finalStationName;
+  final String trainType;
+  final List classList;
+  final String className;
 
   TrainList._({
     this.startStationName,
@@ -531,14 +671,20 @@ class TrainList {
     this.arrivalTimeEndStation,
     this.arrivalTime,
     this.finalStationName,
+    this.trainType,
+    this.classList,
+    this.className,
   });
 
   factory TrainList(Map json) => TrainList._(
-      startStationName: json['startStationName'],
-      endStationName: json['endStationName'],
-      arrivalTimeEndStation: json['arrivalTimeEndStation'],
-      arrivalTime: json['arrivalTime'],
-      finalStationName: json['finalStationName']);
+        startStationName: json['startStationName'],
+        endStationName: json['endStationName'],
+        arrivalTimeEndStation: json['arrivalTimeEndStation'],
+        arrivalTime: json['arrivalTime'],
+        finalStationName: json['finalStationName'],
+        trainType: json['trainType'],
+        classList: json['classList'],
+      );
 }
 
 class PriceList {
