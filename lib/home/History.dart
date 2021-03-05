@@ -1,50 +1,78 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:train_ticket_app/widgets/provider_widet.dart';
 
-class History extends StatefulWidget {
-  @override
-  _HistoryState createState() => _HistoryState();
-}
+class History extends StatelessWidget {
+  const History({Key key}) : super(key: key);
 
-class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
-    List<dynamic> directTrains;
-    return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            directTrains == null
-                ? Expanded(
-                    child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.search,
-                        color: Colors.black12,
-                        size: 110,
-                      ),
-                      Text(
-                        'No results to display',
-                        style: TextStyle(
-                            color: Colors.black12,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  ))
-                : Expanded(
-                    child: ListView(
-                      children: directTrains.map((trainsList) {
-                        return ListTile(
-                          title: Text(trainsList['startStationName']),
-                          subtitle: Text(trainsList['endStationName']),
-                          trailing: Text(
-                              'Arivel Time-${trainsList['arrivalTimeFinalStation']}'),
-                        );
-                      }).toList(),
-                    ),
+    return Container(
+      child: StreamBuilder(
+          stream: getUsersTripsStreamSnapshots(context),
+          builder: (context, snapshot) {
+            if (!snapshot.hasData) return const Text("Loading...");
+            return new ListView.builder(
+                itemCount: snapshot.data.documents.length,
+                itemBuilder: (BuildContext context, int index) =>
+                    buildTripCard(context, snapshot.data.documents[index]));
+          }),
+    );
+  }
+
+  Stream<QuerySnapshot> getUsersTripsStreamSnapshots(
+      BuildContext context) async* {
+    final uid = await Provider.of(context).auth.getCurrentUID();
+    yield* Firestore.instance
+        .collection('userData')
+        .document(uid)
+        .collection('payments')
+        .snapshots();
+  }
+
+  Widget buildTripCard(BuildContext context, DocumentSnapshot payment) {
+    return new Container(
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0, bottom: 4.0),
+                child: Row(children: <Widget>[
+                  Text(
+                    payment['PaymentId'],
+                    style: new TextStyle(fontSize: 30.0),
                   ),
-          ],
+                  Spacer(),
+                ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 4.0, bottom: 40.0),
+                child: Row(children: <Widget>[
+                  Text(
+                    "${(payment['date'])} ",
+                    style: TextStyle(color: Colors.red),
+                  ),
+                  Spacer(),
+                ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                child: Row(
+                  children: <Widget>[
+                    Text(
+                      "\Rs.${(payment['price'] == null) ? "n/a" : payment['price']}",
+                      style: new TextStyle(fontSize: 35.0),
+                    ),
+                    Spacer(),
+                    Icon(Icons.train_rounded),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
