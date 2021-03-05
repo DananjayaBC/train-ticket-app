@@ -3,7 +3,7 @@
         "sandbox": {
             "baseUrl":"http://api.lankagate.gov.lk:8280",
             "authorization":"Y0h2YWw2Z3pnZjdzOFR3UlB5UThoWUpmT21VYTpoUmJob0ZpZmRCb1lUVTFEUWI3ZlVrczlqZjRh",
-            "accessToken": "92c36daa-65d9-3281-b5c4-d57d36a3e82f"       
+            "accessToken": "b3d6ff93-51c4-3c4c-b9b0-7e46e1ba070b"       
         },
         "production": {}
     }

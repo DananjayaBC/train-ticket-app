@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
+
 import 'package:train_ticket_app/login/first_view.dart';
+
 import 'package:train_ticket_app/widgets/provider_widet.dart';
 
+class ProfileView extends StatefulWidget {
+  @override
+  _ProfileViewState createState() => _ProfileViewState();
+}
 
-class ProfileView extends StatelessWidget {
+class _ProfileViewState extends State<ProfileView> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
