@@ -42,20 +42,36 @@ class History extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 8.0, bottom: 4.0),
                 child: Row(children: <Widget>[
                   Text(
-                    payment['PaymentId'],
+                    payment['description'],
                     style: new TextStyle(fontSize: 30.0),
                   ),
-                  Spacer(),
                 ]),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 4.0, bottom: 40.0),
+                padding: const EdgeInsets.only(top: 4.0, bottom: 4.0),
+                child: Row(children: <Widget>[
+                  Text(
+                    "Payment ID - ${(payment['PaymentId'])} ",
+                    style: TextStyle(color: Colors.green, fontSize: 20.00),
+                  ),
+                ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 4.0, bottom: 4.0),
                 child: Row(children: <Widget>[
                   Text(
                     "${(payment['date'])} ",
                     style: TextStyle(color: Colors.red),
                   ),
-                  Spacer(),
+                ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 4.0, bottom: 4.0),
+                child: Row(children: <Widget>[
+                  Text(
+                    "Class - ${(payment['class'])} ",
+                    style: TextStyle(color: Colors.blue, fontSize: 20.00),
+                  ),
                 ]),
               ),
               Padding(
