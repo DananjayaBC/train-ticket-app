@@ -15,7 +15,7 @@ class StationSearch extends StatefulWidget {
   final dio =
       Dio(BaseOptions(baseUrl: 'http://api.lankagate.gov.lk:8280', headers: {
     'Accept': 'application/json',
-    'Authorization': 'Bearer 1ef23f8b-66ee-3ae5-8fcf-00b25a07b3dc'
+    'Authorization': 'Bearer b1a1e3d6-70b6-35af-ae53-a6d6b3232592'
   }));
 
   @override
@@ -135,6 +135,9 @@ class _StationSearchState extends State<StationSearch> {
   var _autoValidate = false;
   var _search;
   var _search1;
+  String _search3;
+  String _search4;
+
   List _directTrains;
   List _priceTrains;
   DateTime date = DateTime.now();
@@ -233,6 +236,7 @@ class _StationSearchState extends State<StationSearch> {
                                 searchTextField.textField.controller.text =
                                     item.name;
                                 _search = item.id.toString();
+                                _search3 = item.name;
                               },
                               itemBuilder: (context, item) {
                                 return row(item);
@@ -292,6 +296,7 @@ class _StationSearchState extends State<StationSearch> {
                                     searchTextField1.textField.controller.text =
                                         item1.name1;
                                     _search1 = item1.id1.toString();
+                                    _search4 = item1.name1;
                                   },
                                   itemBuilder: (context1, item1) {
                                     return row1(item1);
@@ -330,6 +335,7 @@ class _StationSearchState extends State<StationSearch> {
                           //Text(time.toString())
                         ],
                       ),
+
                       SizedBox(
                         width: double.infinity,
                         child: RawMaterialButton(
@@ -381,7 +387,8 @@ class _StationSearchState extends State<StationSearch> {
                   : Container(
                       child: Column(
                         children: _priceTrains
-                            .map((json) => PriceItem(PriceList(json)))
+                            .map((json) =>
+                                PriceItem(PriceList(json), _search3, _search4))
                             .toList(),
                       ),
                     ),
@@ -541,8 +548,10 @@ class TrainItem extends StatelessWidget {
 
 class PriceItem extends StatefulWidget {
   final PriceList priceList;
+  final String _search3;
+  final String _search4;
 
-  PriceItem(this.priceList);
+  PriceItem(this.priceList, this._search3, this._search4);
 
   @override
   _PriceItemState createState() => _PriceItemState();
@@ -597,7 +606,7 @@ class _PriceItemState extends State<PriceItem> {
       'startStation': 'Mirigama',
       'endStation': 'Gampaha',
       'name': 'Dananjaya jayalath',
-      'description': 'Mirigama-Gampaha',
+      'description': '${widget._search3} - ${widget._search4}',
       'PaymentType': 'paid',
       'date': formattedDate,
       'PaymentId': response.paymentId
