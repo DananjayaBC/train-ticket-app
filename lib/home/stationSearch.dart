@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:train_ticket_app/models/stations.dart';
 import 'package:train_ticket_app/models/stations2.dart';
@@ -15,7 +16,7 @@ class StationSearch extends StatefulWidget {
   final dio =
       Dio(BaseOptions(baseUrl: 'http://api.lankagate.gov.lk:8280', headers: {
     'Accept': 'application/json',
-    'Authorization': 'Bearer b1a1e3d6-70b6-35af-ae53-a6d6b3232592'
+    'Authorization': 'Bearer bf6471d9-6b67-3d65-8ec0-3b774e5ed2cd'
   }));
 
   @override
@@ -39,6 +40,7 @@ class _StationSearchState extends State<StationSearch> {
       if (response.statusCode == 200) {
         stations = loadStations(response.body);
         print('Stations: ${stations.length}');
+        if (!mounted) return;
         setState(() {
           loading = false;
         });
@@ -55,6 +57,7 @@ class _StationSearchState extends State<StationSearch> {
       if (response.statusCode == 200) {
         stations1 = loadStations1(response.body);
         print('Stations: ${stations1.length}');
+        if (!mounted) return;
         setState(() {
           loading = false;
         });
@@ -320,7 +323,7 @@ class _StationSearchState extends State<StationSearch> {
                           ),
 
                           SizedBox(
-                            width: 80,
+                            width: 70,
                           ),
                           // Text(date.toString()),
                           FlatButton.icon(
@@ -340,6 +343,7 @@ class _StationSearchState extends State<StationSearch> {
                         width: double.infinity,
                         child: RawMaterialButton(
                           onPressed: () {
+                            HapticFeedback.heavyImpact();
                             searchTrain(_search);
                             searchTrain(_search1);
                             priceTrain(_search);
@@ -443,7 +447,7 @@ class TrainItem extends StatelessWidget {
                 height: 320,
                 child: Container(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                           "${trainList.startStationName}-${trainList.endStationName}",
@@ -483,14 +487,13 @@ class TrainItem extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      Text(
-                          "Available classes                ${trainList.classList}",
-                          style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold)),
-                      Text(
-                          "Available classes                ${priceList.priceLKR}",
-                          style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold)),
+                      Center(
+                        child: Text("${trainList.classList}",
+                            style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.red)),
+                      ),
                     ],
                   ),
                 ),
@@ -581,7 +584,7 @@ class _PriceItemState extends State<PriceItem> {
       'key': 'rzp_test_o4J55Xwza1ZYNd',
       'amount': num.parse(widget.priceList.priceLKR) *
           100, //in the smallest currency sub-unit.
-      'name': 'Acme Corp.',
+      'name': widget._search4,
       'order_id': '', // Generate order_id using Orders API
       'description': '',
       'timeout': 300, // in seconds
@@ -595,17 +598,55 @@ class _PriceItemState extends State<PriceItem> {
   }
 
   String formattedDate;
+  String formattedDate1;
+  String formattedDate2;
 
   void _handlePaymentSuccess(PaymentSuccessResponse response) async {
     Fluttertoast.showToast(msg: "SUCCESS " + response.paymentId);
 
     final uid = await Provider.of(context).auth.getCurrentUID();
-    await db.collection("userData").document(uid).collection('payments').add({
+    final name = await Provider.of(context).auth.getCurrentUser();
+
+    await db
+        .collection("userData")
+        .document(uid)
+        .collection(formattedDate1)
+        .add({
       'price': widget.priceList.priceLKR,
       'class': widget.priceList.className,
-      'startStation': 'Mirigama',
-      'endStation': 'Gampaha',
+      'startStation': '${widget._search3}',
+      'endStation': '${widget._search4}',
       'name': 'Dananjaya jayalath',
+      'description': '${widget._search3} - ${widget._search4}',
+      'PaymentType': 'paid',
+      'date': formattedDate,
+      'PaymentId': response.paymentId
+    });
+    await db
+        .collection("admin")
+        .document(formattedDate1)
+        .collection('tickets')
+        .add({
+      'price': double.parse(widget.priceList.priceLKR),
+      'class': widget.priceList.className,
+      'startStation': '${widget._search3}',
+      'endStation': '${widget._search4}',
+      'name': name.displayName,
+      'description': '${widget._search3} - ${widget._search4}',
+      'PaymentType': 'paid',
+      'date': formattedDate,
+      'PaymentId': response.paymentId
+    });
+    await db
+        .collection("administration")
+        .document(formattedDate2)
+        .collection('tickets')
+        .add({
+      'price': double.parse(widget.priceList.priceLKR),
+      'class': widget.priceList.className,
+      'startStation': '${widget._search3}',
+      'endStation': '${widget._search4}',
+      'name': name.displayName,
       'description': '${widget._search3} - ${widget._search4}',
       'PaymentType': 'paid',
       'date': formattedDate,
@@ -625,8 +666,15 @@ class _PriceItemState extends State<PriceItem> {
   @override
   Widget build(BuildContext context) {
     var now = new DateTime.now();
-    var formatter = new DateFormat('yyyy-MM-dd – hh:mm');
+    var formatter = new DateFormat('yyyy-MM-dd – HH:mm a');
+    var date = new DateFormat('yyyy-MM-dd');
+    var formattedDat = new DateFormat('yyyy-MM');
+
     formattedDate = formatter.format(now);
+    formattedDate1 = date.format(now);
+    formattedDate2 = formattedDat.format(now);
+    print(formattedDate2);
+    print(formattedDate1);
     print(formattedDate); // 2016-01-25
 
     return Row(

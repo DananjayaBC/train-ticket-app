@@ -82,7 +82,7 @@ class FirstView extends StatelessWidget {
                     padding: const EdgeInsets.only(
                         top: 10.0, bottom: 10.0, left: 30.0, right: 30.0),
                     child: Text(
-                      "Get Started",
+                      "Sign In",
                       style: TextStyle(
                         color: primaryColor,
                         fontSize: 28,
@@ -91,30 +91,9 @@ class FirstView extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) => CustomDialog(
-                        title: "Would you like to create a free account?",
-                        description:
-                            "With an account, your data will be securely saved, allowing you to access it from multiple devices.",
-                        primaryButtonText: "Create My Account",
-                        primaryButtonRoute: "/signUp",
-                        secondaryButtonText: "Maybe Later",
-                        secondaryButtonRoute: "/home",
-                      ),
-                    );
-                  },
-                ),
-                SizedBox(height: _height * 0.05),
-                FlatButton(
-                  child: Text(
-                    "Sign In",
-                    style: TextStyle(color: Colors.white, fontSize: 25),
-                  ),
-                  onPressed: () {
                     Navigator.of(context).pushReplacementNamed('/signIn');
                   },
-                )
+                ),
               ],
             ),
           ),

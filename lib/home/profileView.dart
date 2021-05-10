@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:train_ticket_app/login/first_view.dart';
-
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:train_ticket_app/widgets/provider_widet.dart';
 
 class ProfileView extends StatefulWidget {
@@ -21,7 +21,15 @@ class _ProfileViewState extends State<ProfileView> {
       child: Container(
         width: MediaQuery.of(context).size.width,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            Icon(
+              FontAwesomeIcons.user,
+              color: Color.fromRGBO(245, 48, 111, 1.0),
+              size: 60.0,
+            ),
+            SizedBox(height: 30),
             FutureBuilder(
               future: Provider.of(context).auth.getCurrentUser(),
               builder: (context, snapshot) {
@@ -46,16 +54,23 @@ class _ProfileViewState extends State<ProfileView> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            "Name: ${user.displayName ?? 'Anonymous'}",
-            style: TextStyle(fontSize: 20),
+            " ${user.displayName ?? 'Anonymous'}",
+            style: TextStyle(
+                color: Colors.black, fontSize: 28.0, fontFamily: "Nexa"),
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            "Email: ${user.email ?? 'Anonymous'}",
-            style: TextStyle(fontSize: 20),
+            "${user.email ?? 'Anonymous'}",
+            style: TextStyle(
+                color: Color(0xFFFE1483),
+                fontSize: 22.0,
+                fontFamily: "NexaLight"),
           ),
+        ),
+        SizedBox(
+          height: 35,
         ),
         showSignOut(context, user.isAnonymous),
       ],
@@ -71,8 +86,11 @@ class _ProfileViewState extends State<ProfileView> {
         },
       );
     } else {
-      return RaisedButton(
-        child: Text("Sign Out"),
+      return FlatButton.icon(
+        icon: Icon(Icons.logout),
+        label: Text('Sign Out'),
+        color: Colors.red,
+        textColor: Colors.white,
         onPressed: () async {
           try {
             await Provider.of(context).auth.signOut();

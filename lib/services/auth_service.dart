@@ -1,8 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:intl/intl.dart';
 
 class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  final Firestore _firestore = Firestore.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
 
   Stream<String> get onAuthStateChanged => _firebaseAuth.onAuthStateChanged.map(
@@ -19,7 +22,6 @@ class AuthService {
     return await _firebaseAuth.currentUser();
   }
 
-
   // Email & Password Sign Up
   Future<String> createUserWithEmailAndPassword(
       String email, String password, String name) async {
@@ -27,7 +29,17 @@ class AuthService {
       email: email,
       password: password,
     );
+    var now = new DateTime.now();
+    var formatter = new DateFormat('yyyy-MM-dd');
+    String formattedTime = DateFormat('kk:mm:a').format(now);
+    String formattedDate = formatter.format(now);
+    print(formattedTime);
+    print(formattedDate);
+    _firestore
+        .collection('users')
+        .add({'name': name, 'email': email, 'date': formattedDate});
 
+//
     // Update the username
     var userUpdateInfo = UserUpdateInfo();
     userUpdateInfo.displayName = name;
@@ -62,6 +74,7 @@ class AuthService {
       idToken: _googleAuth.idToken,
       accessToken: _googleAuth.accessToken,
     );
+
     return (await _firebaseAuth.signInWithCredential(credential)).uid;
   }
 }

@@ -11,13 +11,13 @@ Authorization: Bearer {{accessToken}}
 
 ###
 
-GET {{baseUrl}}/railway/1.0/train/searchTrain?startStationID=75&endStationID=171&startTime=00:00:00&endTime=23:59:00&lang=en&searchDate=2021-02-21
+GET {{baseUrl}}/railway/1.0/train/searchTrain?startStationID=171&endStationID=75&startTime=00:00:00&endTime=23:59:00&lang=en&searchDate=2021-03-20
 Accept: application/json
 Authorization: Bearer {{accessToken}}
 
 ###
 
-GET {{baseUrl}}/railway/1.0/ticket/getPrice?startStationID=75&endStationID=171&lang=en
+GET {{baseUrl}}/railway/1.0/ticket/getPrice?startStationID=171&endStationID=75&lang=en
 Accept: application/json
 Authorization: Bearer {{accessToken}}
 
