@@ -27,7 +27,28 @@ class History extends StatelessWidget {
       body: StreamBuilder(
           stream: getUsersTripsStreamSnapshots(context),
           builder: (context, snapshot) {
-            if (!snapshot.hasData) return const Text("Loading...");
+            if (!snapshot.hasData)
+              return Container(
+                padding: EdgeInsets.all(152),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.qr_code_scanner_outlined,
+                      color: Colors.black,
+                      size: 110,
+                    ),
+                    Text(
+                      'No Tickets',
+                      style: TextStyle(
+                          color: Colors.black38,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              );
+            ;
             return new ListView.builder(
                 itemCount: snapshot.data.documents.length,
                 itemBuilder: (BuildContext context, int index) =>
